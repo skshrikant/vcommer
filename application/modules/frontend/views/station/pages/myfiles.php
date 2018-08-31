@@ -101,8 +101,6 @@ div.pp_pic_holder {
 								</div><br>
 								<div class="row">
 									<div class="col-md-12"> 
-										<!--   <a href="#"  data-rel="prettyPhoto_SlideShow3[SlideShow3]" rel="prettyPhoto_SlideShow3[SlideShow3]"  onclick="ShowObjectWithEffect('Layer316', 1, 'fade', 100, 'swing');return false;">
-										<img class="image" src="<?php echo asset_url();?>images/myfiles_sample.jpg" alt="" title="" style="width:50px;height:28px"></a>-->
 										<a href="<?php echo asset_url();?>images/myfiles_sample.jpg" data-rel="prettyPhoto_SlideShow3[SlideShow3]" rel="prettyPhoto_SlideShow3[SlideShow3]" style="width:42px;height:25px;"><img class="image" src="<?php echo asset_url();?>images/myfiles_sample.jpg" alt="" title="" style="width:42px;height:25px;"></a>
 										<span style="padding-left: 22px;color:#1E90FF;font-family:Arial;font-size:11px;"><strong>Click on image to see where&nbsp; your " My Files" folder, will be displayed. </strong></span>
 									</div>
@@ -159,10 +157,6 @@ div.pp_pic_holder {
 											<div class="col-md-6">
 												<div class="col-sm-5">
 													<input type="checkbox" id="Checkbox98" name="filearray[]" value="<?php echo $myfilelist[$i]['id'];?>" >
-													
-													<!-- <a <?php if($myfilelist[$i]['file_access_type'] == 1) { ?> href="<?php  echo base_url();?>mystation/myfile/download/<?php echo $myfilelist[$i]['id'];?>" 
-													download="<?php  echo base_url();?>mystation/myfile/download/<?php echo $myfilelist[$i]['id'];?>" onclick="recordFileDownload(<?php echo $myfilelist[$i]['id'];?>);" <?php } else { ?> href="#" data-toggle="modal" data-target="#filepassword_modal" 
-													 backdrop="static" onclick="passwordpoup(<?php echo $myfilelist[$i]['id'];?>);" <?php } ?>> -->
 													<a 
 													 	<?php if($myfilelist[$i]['file_access_type'] == 1) { ?> href="<?php  echo asset_url();?><?php echo $myfilelist[$i]['file'];?>" download 
 														<?php } else { ?> href="#" data-toggle="modal" data-target="#filepassword_modal" backdrop="static" onclick="passwordpoup(<?php echo $myfilelist[$i]['id'];?>);" 
@@ -442,10 +436,6 @@ function downloadprivatefile()
 
 				element.click();
 				document.body.removeChild(element);
-				
-				//e.preventDefault();  //stop the browser from following
-			    //window.location.href = $("#myfilename"+id).attr('href');
-			    // window.open("echo base_url();mystation/myfile/download/"+id, '_blank', '');
 			} 
 		},'json');
 	} else {

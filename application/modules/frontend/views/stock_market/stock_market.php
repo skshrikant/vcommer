@@ -333,18 +333,7 @@ function openNewPostForm() {
 					                    message: 'Quantity is required'
 					                }
 					            }
-					        },
-					        postphoto1: {
-					            validators: {
-					                require_from_group: [1, ".atLeastOneImg"]
-					            }
-					        },
-					        postphoto2: {
-					            validators: {
-					                require_from_group: [1, ".atLeastOneImg"]
-					            }
-					        },
-							
+					        },							
 					    }
 					}).on('success.form.bv', function(event,data) {
 						// Prevent form submission

@@ -107,15 +107,14 @@ class Sellers_Model extends CI_Model {
 			
     	if(!empty($params['busi_id'])) {
     		if(!empty($params['community_only'])) {
-    			// $this->db->where("l.my_busi_id",$params['busi_id']);
-                $this->db->where("l.id IS NOT NULL");
-                $this->db->where("b.plan_id > 1");
+    			
+					$this->db->where("l.id IS NOT NULL");
+					$this->db->where("b.plan_id > 1");
     		}
-            // print_r($params);exit;
+      
     		if(!empty($params['community_hide'])) {
-    			// $this->db->where("l.my_busi_id !=",$params['busi_id']);
-                $this->db->where("l.id IS NULL");
-                $this->db->where("b.plan_id <= 1");
+					$this->db->where("l.id IS NULL");
+					$this->db->where("b.plan_id <= 1");
     		}
     	}
     	
@@ -130,19 +129,14 @@ class Sellers_Model extends CI_Model {
         }else{
             $this->db->order_by('b.plan_id','ASC');
         }
-        // commented below order by code on 27/8/2018
-        // $this->db->order_by('b.rank','DESC');
-            
-    	// $this->db->order_by('b.is_logo_verified','DESC');
-    	// $this->db->order_by('b.gaurantee_period','DESC');
+
     	$this->db->group_by('b.id');
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
     		$this->db->limit($start,25);
     	}
     	$query = $this->db->get();
-		$result = $query->result_array();
-			// print_r($this->db->last_query());exit;
+			$result = $query->result_array();
     	return $result;
     }
     
@@ -437,30 +431,24 @@ class Sellers_Model extends CI_Model {
     	}
     	if(isset($params['busi_id']) && !empty($params['busi_id'])) {
     		if(isset($params['community_hide']) && !empty($params['community_hide'])) {
-    			// $this->db->order_by("l.id","ASC");
-                $this->db->where("l.id IS NULL");
-                $this->db->where("b.plan_id <= 1");
-                // $this->db->where('a.busi_id !=', $params['busi_id']);
+					$this->db->where("l.id IS NULL");
+					$this->db->where("b.plan_id <= 1");
     		}
     		if(isset($params['community_only']) && !empty($params['community_only'])) {
     			$this->db->order_by("l.id","DESC");
-                // $this->db->order_by('k.busi_id', 'DESC');
-
     		}
     	}
 
-        if(isset($params['main_prod']) && !empty($params['main_prod'])) {
-            $this->db->where("(h.name like '%".trim($params['main_prod'])."%')",'',false);
-        }
-        if(isset($params['sub_prod']) && !empty($params['sub_prod'])) {
-            $this->db->where("(r.name like '%".trim($params['sub_prod'])."%')",'',false);
-        }
+			if(isset($params['main_prod']) && !empty($params['main_prod'])) {
+					$this->db->where("(h.name like '%".trim($params['main_prod'])."%')",'',false);
+			}
+			if(isset($params['sub_prod']) && !empty($params['sub_prod'])) {
+					$this->db->where("(r.name like '%".trim($params['sub_prod'])."%')",'',false);
+			}
     	if(isset($params['usubcat_id']) && !empty($params['usubcat_id'])) {
-    		// $this->db->where("e.id",$params['usubcat_id']);
-            $this->db->order_by("FIELD(e.id, ".$params['usubcat_id'].") DESC");
+				$this->db->order_by("FIELD(e.id, ".$params['usubcat_id'].") DESC");
     	}
-    	// $this->db->order_by('b.plan_id','DESC');
-    	// $this->db->order_by('b.is_logo_verified','DESC');
+
     	$this->db->group_by('b.id');
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
@@ -468,7 +456,6 @@ class Sellers_Model extends CI_Model {
     	}
     	$query = $this->db->get();
     	$result = $query->result_array();
-        // print_r($this->db->last_query());exit;
     	return $result;
     }
     public function countShippers($params) {
@@ -774,21 +761,15 @@ class Sellers_Model extends CI_Model {
 	    		$this->db->where("b.company_country like '%".trim($params['country'])."%'",'',false);
 	    	}
 	    	if(isset($params['keyword']) && !empty($params['keyword'])) {
-	    		
-                // $this->db->where("(a.name like '%".trim($params['keyword'])."%' OR a.model_no like '%".trim($params['keyword'])."%')",'',false);
-             
-                $this->db->where("(". text_search_str('a.name',$params['keyword']) ." OR ". text_search_str('a.model_no',$params['keyword']) ." OR ". fulltext_search_str('a.name',$params['keyword'])." OR ".fulltext_search_str('a.model_no',$params['keyword']).")",'',false);
-
-                    $common_keywords = explode(" ",$params['keyword']);
-                    $keywords = array_values(array_unique($common_keywords));
-                    $incrementValue = count($keywords);
-
-                    $this->db->order_by("CASE a.name WHEN '". $params['keyword']. "' THEN 0 END DESC,
-                                         CASE a.model_no WHEN '". $params['keyword']. "' THEN 1 END DESC,
-                                         CASE a.name ". fullOrder_str($params['keyword'],$incrementValue+1). " END ASC,
-                                         CASE a.model_no ". fullOrder_str($params['keyword'],$incrementValue+$incrementValue+1). " END ASC
-                                        ");
-             
+					$this->db->where("(". text_search_str('a.name',$params['keyword']) ." OR ". text_search_str('a.model_no',$params['keyword']) ." OR ". fulltext_search_str('a.name',$params['keyword'])." OR ".fulltext_search_str('a.model_no',$params['keyword']).")",'',false);
+					$common_keywords = explode(" ",$params['keyword']);
+					$keywords = array_values(array_unique($common_keywords));
+					$incrementValue = count($keywords);
+					$this->db->order_by("CASE a.name WHEN '". $params['keyword']. "' THEN 0 END DESC,
+																CASE a.model_no WHEN '". $params['keyword']. "' THEN 1 END DESC,
+																CASE a.name ". fullOrder_str($params['keyword'],$incrementValue+1). " END ASC,
+																CASE a.model_no ". fullOrder_str($params['keyword'],$incrementValue+$incrementValue+1). " END ASC
+															");
 	    	}
 	    	if(isset($params['city']) && !empty($params['city'])) {
 	    		$this->db->where("b.company_city like '%".trim($params['city'])."%'",'',false);
@@ -808,46 +789,33 @@ class Sellers_Model extends CI_Model {
     	}
     	if(isset($params['busi_id']) && !empty($params['busi_id'])) {
     		if(isset($params['community_only']) && !empty($params['community_only'])) {
-    			// $this->db->where("l.my_busi_id",$params['busi_id']);
-                $this->db->where("l.id IS NOT NULL");
-                $this->db->where("b.plan_id > 1");
+					$this->db->where("l.id IS NOT NULL");
+					$this->db->where("b.plan_id > 1");
     		}
     		if(isset($params['community_hide']) && !empty($params['community_hide'])) {
-    			// $this->db->where("l.my_busi_id !=",$params['busi_id']);
-                $this->db->where("l.id IS NULL");
-                $this->db->where("b.plan_id <= 1");
+					$this->db->where("l.id IS NULL");
+					$this->db->where("b.plan_id <= 1");
     		}
     	}
     	if(isset($params['plan_id']) && !empty($params['plan_id'])) {
-            if($params['plan_id'] > 1) {
-                $this->db->order_by('b.plan_id', 'DESC');
-            }else{
-                // $this->db->order_by('b.plan_id','ASC');
-            }
-    	}else{
-            // $this->db->order_by('b.plan_id','ASC');
-        }
-
+				if($params['plan_id'] > 1) {
+						$this->db->order_by('b.plan_id', 'DESC');
+				}
+    	}
     	if(isset($params['main_prod']) && $params['main_prod']!=''){
-			$this->db->where("(d.name like '%".trim($params['main_prod'])."%')",'',false);
-		}
-		if(isset($params['sub_prod']) && $params['sub_prod']!=''){
-			$this->db->where("(c.name like '%".trim($params['sub_prod'])."%')",'',false);
-		}
+				$this->db->where("(d.name like '%".trim($params['main_prod'])."%')",'',false);
+			}
+			if(isset($params['sub_prod']) && $params['sub_prod']!=''){
+				$this->db->where("(c.name like '%".trim($params['sub_prod'])."%')",'',false);
+			}
     	$this->db->group_by('a.id');
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
     		$this->db->limit($start,25);
     	}
-    	// $this->db->order_by('b.rank','DESC');
-    	// $this->db->order_by('b.plan_id','DESC');
-    	// $this->db->order_by('b.is_logo_verified','DESC');
-    	// $this->db->order_by('b.gaurantee_period','DESC');
     	$query = $this->db->get();
-    	// echo $this->db->last_query();exit;
     	$result = $query->result_array();
-    	return $result;
-    	
+    	return $result;	
     }
     
     public function countProducts($params){
@@ -1001,7 +969,6 @@ class Sellers_Model extends CI_Model {
     	$this->db->order_by('b.plan_id','DESC');
     	$this->db->group_by('a.id');
     	$query = $this->db->get();
-    	//echo $this->db->last_query();
     	$result = $query->result_array();
     	return $result;
     	

@@ -354,7 +354,6 @@ class MyFiles extends MX_Controller {
         $this->load->library('mylib/MyfileLib');
         $myfilelist = $this->myfilelib->getFileById($id);
 				$path = FCPATH."assets/".$myfilelist[0]['file'];
-				// print_r(basename($path));exit;
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
         header('Content-Disposition: attachment; filename="'.basename($path).'"');

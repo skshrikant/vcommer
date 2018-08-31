@@ -43,7 +43,7 @@
 						<label class="label-text col-sm-3">&nbsp;</label>
 						<div class="col-sm-offset-3 col-sm-9">
 							<div>
-								<input type="file" name="bpostphoto[]" id="bpostphoto1" class="post-background" onchange="setBackgroundSize('bpostphoto1',this,75);" style="display:inline;"/>
+								<input type="file" name="bpostphoto[]" id="bpostphoto1" class="post-background" onchange="setBackgroundSize('bpostphoto1',this,75);" style="display:inline;" required/>
 								<input type="file" name="bpostphoto[]" id="bpostphoto2" class="post-background" onchange="setBackgroundSize('bpostphoto2',this,75);" style="display:inline;"/>
 								<input type="file" name="bpostphoto[]" id="bpostphoto3" class="post-background" onchange="setBackgroundSize('bpostphoto3',this,75);" style="display:inline;"/>
 								<input type="file" name="bpostphoto[]" id="bpostphoto4" class="post-background" onchange="setBackgroundSize('bpostphoto4',this,75);" style="display:inline;"/>
