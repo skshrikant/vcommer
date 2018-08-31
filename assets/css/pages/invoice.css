@@ -1,0 +1,60 @@
+.invoicetdclass {
+	border: 2px #FF6347 dotted !important;
+}
+.editinvoicetd {
+	background-color:white;
+	border: 2px #FF6347 dotted !important;
+}
+.textstyle {
+	    width: 561px;
+    height: 129px;
+}
+.edit-textcolor {
+	color:#5F88F0 !important;
+}
+.btnaddress {
+	width:106px; 
+	height: 27px;
+	background-color:#696969;
+	border:1px #A0A0A0 solid;
+	color: #A9A9A9; 
+	font-family: 'MS Shell Dlg'; 
+	font-size: 11px;"
+}
+.btnaddress:hover {
+	background-color:#1a53ff;
+	color:white;
+}
+#buyeraddresspopup {
+	background-color: #3C3C3C; 
+	width: 400px;min-height: 220px; 
+	position: absolute; margin-top: 250px;
+    margin-left: 425px; 
+    visibility: visible; 
+    z-index: 1922;
+    box-shadow: 4px 4px 7px #151414;
+}
+.editlink a:hover{
+	text-decoration: none;
+}
+.productpricepopup {
+	background-color: #3C3C3C; 
+	width: 400px;min-height: 220px; 
+	padding:22px;
+	position: absolute;
+    visibility: visible; 
+    z-index: 1922;
+    box-shadow: 4px 4px 7px #151414;
+}
+.inputboxstyle {
+	width: 335px;min-height: 95px;
+}
+.termspopup {
+	background-color: #3C3C3C; 
+	width: 611px;min-height: 220px; 
+	padding:22px;
+	position: absolute;
+    visibility: visible; 
+    z-index: 1922;
+    box-shadow: 4px 4px 7px #151414;
+}

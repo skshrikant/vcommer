@@ -1,0 +1,28 @@
+.main {
+	padding:34px;
+}
+.contactaddress {
+	background-color:#E0FFFF;height:35px;
+}
+.languagedivsave {
+	position: absolute;  left: 1066px; top: 338px; width: 100px;
+}
+.languagebtnsave {
+	background-color: #F69C0A;height: 35px;width: 130px;border:none;
+}
+.tab li a {
+    background-color: #4B4B4B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 13px;
+    color:white;
+    height: 34px;
+    padding: 8px;
+}
+.tab li:hover {
+	 background-color: #F69C0A;
+
+	}

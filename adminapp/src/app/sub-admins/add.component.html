@@ -1,0 +1,100 @@
+<div [config]="{ show: true , backdrop: 'static'}" bsModal #addShownModal="bs-modal" class="modal fade Sub-Admin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="">
+        <div class="modal-content admin-popup" style="background:#FAFAFA;">
+            <div class="modal-header" style="background:#fafafa">
+                <button type="button" class="close" [routerLink]="['../']" style="opacity:1;"><img src="images/img3424.png" width="30px"></button>
+            </div>
+            <div class="modal-body">
+                    <form [formGroup]="adminForm" novalidate>                            
+                <div class="row margin-bottom">
+                    <div class="col-sm-3">
+                            <div *ngIf="profileImg && profileImg.value; else falsyTemplate">
+                                    <img [src]="imageToShow" class="img-responsive">                               
+                                   </div>
+                                   
+                                  <ng-template #falsyTemplate>
+                                        <img src="images/img3235.png" class="img-responsive">                        
+                                              </ng-template>
+                                  </div>
+                    <div class="col-sm-6 form-group" [ngClass]="{'has-error':serverErrors?.profile_image}">
+                        <h1 style="color:#1E1E1E;font-family:Arial;font-size:16px;">Add User Profile Image</h1>
+                        <input type="file" class="form-control input-box" ng2FileSelect [uploader]="uploader" (change)="onFileChange($event)" #fileInput/>
+                        <span class="help=block error" *ngIf="serverErrors?.profile_image">{{serverErrors?.profile_image}}</span>
+                    </div>
+                </div>
+                <div class="row margin-bottom">
+                    <div class="col-sm-6 form-group" [ngClass]="{'has-error': submitted && (adminForm.get('username').errors || serverErrors?.username)}">
+                        <input type="text" class="form-control input-box" formControlName="username" placeholder="user Name">
+                        <span class="help-block" *ngIf="submitted">
+                            <span *ngIf="adminForm.get('username').hasError('required') || serverErrors?.username == 'required'"> UserName required</span>
+                            <span *ngIf="serverErrors?.username == 'is_unique'"> Username already exist</span>
+                        </span>
+
+                        </div>
+                    <div class="col-sm-6 form-group" [ngClass]="{'has-error': submitted && (adminForm.get('email').errors || serverErrors?.email)}">
+                        <input type="text" class="form-control input-box" formControlName="email" placeholder="email">
+                        <span class="help-block" *ngIf="submitted">
+                            <span *ngIf="(adminForm.get('email').errors | firstError) === 'email' || serverErrors?.email == 'valid_email'"> Email invalid</span>
+                            <span *ngIf="(adminForm.get('email').errors | firstError) === 'required' || serverErrors?.email == 'required'"> Email required</span>
+                            <span *ngIf="serverErrors?.email == 'is_unique'"> Email already exist</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row margin-bottom">
+                        <div class="col-sm-6 form-group" [ngClass]="{'has-error':submitted && (adminForm.get('password').errors || serverErrors?.password)}">
+                                <input type="text" class="form-control input-box" formControlName="password" placeholder="Password">
+                                <span class="help-block" *ngIf="submitted">
+                                    <span *ngIf="adminForm.get('password').hasError('required') || serverErrors?.password?.required"> Password required</span>
+        </span>
+    </div>
+                        <div class="col-sm-6 form-group" [ngClass]="{'has-error':submitted && (adminForm.get('security_code').errors ||
+                         serverErrors?.security_code)}">
+                                <input type="text" class="form-control input-box" formControlName="security_code" placeholder="security code">
+                                <span class="help-block" *ngIf="submitted">
+                                    <span *ngIf="adminForm.get('security_code').hasError('required') || serverErrors?.security_code?.required"> security code required</span>
+        </span>
+    </div>
+                </div>
+
+                <div class="row margin-bottom margin-top" formGroupName="permissions">
+                        <h1 style="color:#2D2D2D;font-family:Georgia;font-size:21px;">User Permissions</h1>
+                    <div class="col-sm-6">
+                        <div class="row" *ngFor="let permit of permissionKeys; let permitI=index;">
+                            <div class="col-sm-3" *ngIf="permitI < 4">
+                                <div class="onoffswitch">                                       
+                                    <input type="checkbox" name="onoffswitch" [formControlName]="permit.value" class="onoffswitch-checkbox" id="{{'myonoffswitch' + permitI}}" >
+                                    <label class="onoffswitch-label" for="{{'myonoffswitch' + permitI}}">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9" *ngIf="permitI < 4">
+                                <span style="color:#1E1E1E;font-family:Arial;font-size:14px;">{{permit.name}}</span>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-sm-6">
+                        <div class="row" *ngFor="let permit of permissionKeys; let permitI=index;">
+                            <div class="col-sm-3" *ngIf="permitI >= 4">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" [formControlName]="permit.value" class="onoffswitch-checkbox" id="{{'myonoffswitch' + permitI}}" >
+                                    <label class="onoffswitch-label" for="{{'myonoffswitch' + permitI}}">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-9" *ngIf="permitI >= 4">
+                                <span style="color:#1E1E1E;font-family:Arial;font-size:14px;">{{permit.name}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center"><a (click)="onSubmit(adminForm)" class="btn btn-blue">Create</a>
+                     <a [routerLink]="['../']" class="btn btn-blue">Cancel</a></div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

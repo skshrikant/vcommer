@@ -1,0 +1,216 @@
+<div [config]="{ show: true , backdrop: 'static'}" bsModal #autoShownModal="bs-modal" class="modal fade Sub-Admin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document" style="background:none;">
+        <div class="modal-content admin-popup" style="background:none; box-shadow:none; border:none;">
+            <div class="modal-header" style="border:none;">
+                <button type="button" class="close" [routerLink]="['/']" style="opacity:1;"><img src="images/closeround.png" width="30px"></button>
+                <h4 class="modal-title" id="myLargeModalLabel"><img src="images/user-new-3.png" width="40px"> Sub-Admin </h4> {{subAdminList?.length || 0}}
+            </div>
+            <div class="modal-body" style="background:#F5F5F5">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-sm-2">
+                            <h3 class="sub-title">Manage</h3>
+                        </div>
+                        <div class="col-sm-10"> <a [routerLink]="['add']" class="btn btn-blue">Add Sub-Admin </a> <a [routerLink]="['suspended-list']" class="btn btn-black">Suspended List</a> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-sm-7">
+                            <swal
+                                    #deleteSwal
+                                    title="Delete selected sub admins?"
+                                    text="This cannot be undone"
+                                    [showCancelButton]="true"
+                                    [focusCancel]="true"
+                                    (confirm)="deleteAdmins()">
+                            </swal>
+                            <swal
+                                    #suspendSwal
+                                    title="Suspend selected sub admins?"
+                                    [showCancelButton]="true"
+                                    [focusCancel]="true"
+                                    (confirm)="deleteAdmins(true)">
+                            </swal>
+                            <button class="btn btn-login" [disabled]="!enableOtherButtons || editEnabled">Logs</button>
+                            <button class="btn btn-login" [swal]="deleteSwal"  [disabled]="!enableOtherButtons || editEnabled">Delete</button>
+                            <button class="btn btn-login" [swal]="suspendSwal" [disabled]="!enableOtherButtons || editEnabled">Suspend</button>
+                            <button (click)="openEditable()" [disabled]="!enableEditButtons" class="btn btn-login">Edit</button>
+                            <button class="btn btn-login" (click)="redirectToPermssion()" [disabled]="!enableEditButtons">Permissions</button> </div>
+                        <div class="col-sm-5">
+                            <div class="row" style="margin:0px;">
+                                <div class="col-xs-10">
+                                    <div class="row">
+                                        <input type="text" class="form-control input-box" ngModel="searchText" #searchText placeholder="Search for sub admin" style="margin-top:20px;">
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="row"> <button class="btn btn-login" (click)="search(searchText.value)">Search</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tabel-div">
+                    <div class="col-xs-12" *ngIf="subAdminList && subAdminList.length">
+                        <div class="panel panel-default" *ngFor="let adminUser of subAdminList; let adminI = index;">
+                            <div class="panel-body">
+                                <div class="row" *ngIf="(this.selectedAdminEdit?.id != adminUser?.id)">
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <div class="col-lg-2 text-center">
+                                                <div class="checkbox subceck">
+                                                    <label>
+                                                        <input type="checkbox" [disabled]="editEnabled" [(ngModel)]="adminUser.selected" (ngModelChange)="toggleActionButtons()" #selected>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 text-center">
+                                                <div *ngIf="adminUser?.profile_image; else falsyTemplate">
+                                                    <img [src]="adminUser?.profile_image" class="img-responsive" style="width:80px; margin:auto">
+                                                </div>
+
+                                                <ng-template #falsyTemplate>
+                                                    <img src="images/img3235.png" class="img-responsive" style="width:80px; margin:auto">
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">User</label>
+                                            <label class="data-label col-xs-8">{{adminUser?.username}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">ID</label>
+                                            <label class="data-label col-xs-8">{{adminUser?.email}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Password</label>
+                                            <label class="data-label col-xs-8">{{adminUser?.password}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Status</label>
+                                            <label class="data-label col-xs-8" style="color:#FF6347;">{{adminUser?.online_status == 1?'Online':'Offline'}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">S. Code</label>
+                                            <label class="data-label col-xs-8">{{adminUser?.security_code}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Last Login</label>
+                                            <label class="data-label col-xs-8">15 Jan 17 - 01:00 AM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            </div>
+                                        </div>
+                                </div>
+                                <form novalidate class="row" *ngIf="this.selectedAdminEdit?.id == adminUser?.id && editEnabled"
+                                      [formGroup]="editAdminForm">
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <div class="col-lg-2 text-center">
+                                                <div class="checkbox subceck">
+                                                    <label>
+                                                        &nbsp;
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10 text-center">
+                                                <div *ngIf="this.selectedAdminEdit?.profile_image; else falsyTemplate">
+                                                    <img [src]="this.selectedAdminEdit?.profile_image" class="img-responsive" style="width:80px; margin:auto">
+                                                </div>
+
+                                                <ng-template #falsyTemplate>
+                                                    <img src="images/img3235.png" class="img-responsive" style="width:80px; margin:auto">
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">User</label>
+                                            <label class="data-label col-xs-8">{{this.selectedAdminEdit?.username}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">ID</label>
+                                            <label class="data-label col-xs-8">
+                                                <div class="form-group" [ngClass]="{'has-error': submitted && (editAdminForm.get('email').errors || serverErrors?.email)}">
+                                                    <input type="text" class="form-control input-box" formControlName="email" placeholder="email">
+                                                    <span class="help-block" *ngIf="submitted">
+                            <span *ngIf="(editAdminForm.get('email').errors | firstError) === 'email' || serverErrors?.email == 'valid_email'"> Email invalid</span>
+                            <span *ngIf="(editAdminForm.get('email').errors | firstError) === 'required' || serverErrors?.email == 'required'"> Email required</span>
+                            <span *ngIf="serverErrors?.email == 'is_unique'"> Email already exist</span>
+                        </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Password</label>
+                                            <label class="data-label col-xs-8">
+                                                <div class="form-group" [ngClass]="{'has-error': submitted && (editAdminForm.get('password').errors || serverErrors?.password)}">
+                                                    <input type="text" class="form-control input-box" formControlName="password" placeholder="password">
+                                                    <span class="help-block" *ngIf="submitted">
+                            <span *ngIf="(editAdminForm.get('password').errors | firstError) === 'required' || serverErrors?.password == 'required'"> password required</span>
+                        </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Status</label>
+                                            <label class="data-label col-xs-8" style="color:#FF6347;">{{this.selectedAdminEdit?.online_status == 1?'Online':'Offline'}}</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">S. Code</label>
+                                            <label class="data-label col-xs-8">
+                                                <div class="form-group" [ngClass]="{'has-error': submitted && (editAdminForm.get('security_code').errors || serverErrors?.security_code)}">
+                                                    <input type="text" class="form-control input-box" formControlName="security_code" placeholder="security_code">
+                                                    <span class="help-block" *ngIf="submitted">
+                            <span *ngIf="(editAdminForm.get('security_code').errors | firstError) === 'required' || serverErrors?.security_code == 'required'"> security_code required</span>
+                            <span *ngIf="serverErrors?.security_code == 'is_unique'"> security_code already exist</span>
+                        </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">Last Login</label>
+                                            <label class="data-label col-xs-8">15 Jan 17 - 01:00 AM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 text-right">
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">
+                                        <button (click)="editAdmin(adminI)" class="btn btn-primary btn-lg">Save</button>
+                                                </label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">
+                                            <button (click)="resetAdminForm()" class="btn btn-primary btn-lg">Reset</button>
+</label>
+                                        </div>
+                                        <div class="row">
+                                            <label class="main-label col-xs-4">
+                                        <button (click)="closeEdit()" class="btn btn-primary btn-lg">Cancel</button>
+                                                </label>
+                                    </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" *ngIf="subAdminList && !subAdminList.length">
+                        No subadmins added yet
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+<trd-permition [selectedEditAdmin]="selectedPermissionEdit" (toggleEdit)="togglePermissionEdit($event)" *ngIf="showPermissionForm"></trd-permition>

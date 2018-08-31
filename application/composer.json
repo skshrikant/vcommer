@@ -1,0 +1,6 @@
+{
+    "require": {
+        "pusher/pusher-php-server": "2.2.*",
+        "chriskacerguis/codeigniter-restserver": "^3.0"
+    }
+}

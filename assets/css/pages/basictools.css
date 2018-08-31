@@ -1,0 +1,484 @@
+#Layer223 {
+    background-color: #000000;
+    filter: alpha(opacity=90);
+    opacity: 0.90;
+}
+#Layer139 {
+    background-color: transparent;
+}
+.share-btns {
+	width:45px;
+	height:45px;
+}
+#RollOver64 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver64:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver64 .front, #RollOver64 .back
+{
+   position: absolute;
+}
+#RollOver64 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver64 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver64 .front
+{
+   z-index: 2;
+}
+#RollOver64:hover .front
+{
+   z-index: 0;
+}
+#RollOver64 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver65 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver65:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver65 .front, #RollOver65 .back
+{
+   position: absolute;
+}
+#RollOver65 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver65 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver65 .front
+{
+   z-index: 2;
+}
+#RollOver65:hover .front
+{
+   z-index: 0;
+}
+#RollOver65 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver66 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver66:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver66 .front, #RollOver66 .back
+{
+   position: absolute;
+}
+#RollOver66 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver66 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver66 .front
+{
+   z-index: 2;
+}
+#RollOver66:hover .front
+{
+   z-index: 0;
+}
+#RollOver66 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver67 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver67:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver67 .front, #RollOver67 .back
+{
+   position: absolute;
+}
+#RollOver67 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver67 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver67 .front
+{
+   z-index: 2;
+}
+#RollOver67:hover .front
+{
+   z-index: 0;
+}
+#RollOver67 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver68 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver68:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver68 .front, #RollOver68 .back
+{
+   position: absolute;
+}
+#RollOver68 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver68 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver68 .front
+{
+   z-index: 2;
+}
+#RollOver68:hover .front
+{
+   z-index: 0;
+}
+#RollOver68 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver69 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver69:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver69 .front, #RollOver69 .back
+{
+   position: absolute;
+}
+#RollOver69 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver69 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver69 .front
+{
+   z-index: 2;
+}
+#RollOver69:hover .front
+{
+   z-index: 0;
+}
+#RollOver69 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver70 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver70:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver70 .front, #RollOver70 .back
+{
+   position: absolute;
+}
+#RollOver70 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver70 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver70 .front
+{
+   z-index: 2;
+}
+#RollOver70:hover .front
+{
+   z-index: 0;
+}
+#RollOver70 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#RollOver71 .image_container
+{
+   width: 45px;
+   height: 45px;
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   transition: 500ms;
+}
+#RollOver71:hover .image_container
+{
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver71 .front, #RollOver71 .back
+{
+   position: absolute;
+}
+#RollOver71 img
+{
+   border-width: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver71 .back
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   -ms-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+   transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+#RollOver71 .front
+{
+   z-index: 2;
+}
+#RollOver71:hover .front
+{
+   z-index: 0;
+}
+#RollOver71 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 45px;
+   height: 45px;
+}
+#Image103
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}

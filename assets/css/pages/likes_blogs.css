@@ -1,0 +1,338 @@
+body
+{
+   background-color: #F5F5F5;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#jQueryButton1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+}
+#jQueryButton1 .ui-button
+{
+   position: absolute;
+}
+#jQueryButton1 .ui-button-text-icon .ui-button-icon-primary,
+#jQueryButton1 .ui-button-text-icons .ui-button-icon-primary,
+#jQueryButton1 .ui-button-icons-only .ui-button-icon-primary
+{
+   left: auto;
+   right: 10px;
+}
+#jQueryButton1 .ui-button-text-icons .ui-button-icon-secondary,
+#jQueryButton1 .ui-button-icons-only .ui-button-icon-secondary
+{
+   right: auto;
+   left: 10px;
+}
+#wb_Form1
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+}
+#TextArea1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   resize: none;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Layer6
+{
+   background-color: transparent;
+}
+#Layer92
+{
+   background-color: transparent;
+   background-image: url(../../images/sellerheader.jpg);
+   background-repeat: no-repeat;
+   background-position: left top;
+   background-size: cover;
+}
+#Layer100
+{
+   background-color: #FFFFFF;
+   background-color: rgba(255,255,255,0.99);
+   filter: alpha(opacity=60);
+   opacity: 0.60;
+}
+#wb_Text213 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text213 div
+{
+   text-align: left;
+}
+#wb_Text214 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text214 div
+{
+   text-align: left;
+}
+#Layer102
+{
+   background-color: #DCDCDC;
+}
+#Layer103
+{
+   background-color: #FFFFFF;
+}
+#Layer103:hover
+{
+   background-color: #FFEBCD;
+   -webkit-transition: background-color 300ms linear 0ms;
+   -moz-transition: background-color 300ms linear 0ms;
+   -ms-transition: background-color 300ms linear 0ms;
+   transition: background-color 300ms linear 0ms;
+}
+#wb_Text215 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text215 div
+{
+   text-align: left;
+}
+#wb_Text216 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text216 div
+{
+   text-align: left;
+}
+#wb_Text221 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text221 div
+{
+   text-align: left;
+}
+#Layer104
+{
+   background-color: #FFFFFF;
+}
+#Layer104:hover
+{
+   background-color: #FFEBCD;
+   -webkit-transition: background-color 300ms linear 0ms;
+   -moz-transition: background-color 300ms linear 0ms;
+   -ms-transition: background-color 300ms linear 0ms;
+   transition: background-color 300ms linear 0ms;
+}
+#wb_Text222 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text222 div
+{
+   text-align: left;
+}
+#wb_Text217 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text217 div
+{
+   text-align: left;
+}
+#wb_Text224 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text224 div
+{
+   text-align: left;
+}
+#Layer105
+{
+   background-color: #FFFFFF;
+}
+#Layer105:hover
+{
+   background-color: #FFEBCD;
+   -webkit-transition: background-color 300ms linear 0ms;
+   -moz-transition: background-color 300ms linear 0ms;
+   -ms-transition: background-color 300ms linear 0ms;
+   transition: background-color 300ms linear 0ms;
+}
+#wb_Text220 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text220 div
+{
+   text-align: left;
+}
+#wb_Text218 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text218 div
+{
+   text-align: left;
+}
+#wb_Text226 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text226 div
+{
+   text-align: left;
+}
+#Layer112
+{
+   background-color: #FFFFFF;
+}
+#Layer112:hover
+{
+   background-color: #FFEBCD;
+   -webkit-transition: background-color 300ms linear 0ms;
+   -moz-transition: background-color 300ms linear 0ms;
+   -ms-transition: background-color 300ms linear 0ms;
+   transition: background-color 300ms linear 0ms;
+}
+#wb_Text219 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text219 div
+{
+   text-align: left;
+}
+#wb_Text225 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text225 div
+{
+   text-align: left;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#Shape1
+{
+   border-width: 0;
+}
+#Shape2
+{
+   border-width: 0;
+}
+#Shape3
+{
+   border-width: 0;
+}
+#Shape4
+{
+   border-width: 0;
+}
+#AdvancedButton1
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   background-color: #FFFFFF;
+   background-image: url(../../images/items_like0.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}

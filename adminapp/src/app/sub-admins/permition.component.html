@@ -1,0 +1,55 @@
+
+<div [config]="{ show: true , backdrop: 'static', size: 'sm'}" (onClose)="toggleEdit.emit(false)" bsModal #permissionModal="bs-modal" class="modal fade Sub-Admin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document" style="">
+    <div class="modal-content admin-popup" style="background:#FAFAFA;">
+      <div class="modal-header" style="background:#fafafa">
+        <button type="button" class="close" (click)="toggleEdit.emit(false)" style="opacity:1;"><img src="images/img3424.png" width="30px"></button>
+      </div>
+      <div class="modal-body" *ngIf="permitions">
+        <form [formGroup]="permissionForm" novalidate>
+          <div class="row margin-bottom">
+            <div class="col-sm-3">
+              <div *ngIf="selectedEditAdmin.profile_image; else falsyTemplate">
+                <img [src]="selectedEditAdmin.profile_image" class="img-responsive">
+              </div>
+
+              <ng-template #falsyTemplate>
+                <img src="images/img3235.png" class="img-responsive">
+              </ng-template>
+            </div>
+            <div class="col-sm-6 form-group" >
+              <div>{{selectedEditAdmin.username}}</div>
+              <div>{{selectedEditAdmin.email}}</div>
+             </div>
+          </div>
+
+          <div class="row margin-bottom margin-top">
+            <div class="col-sm-12">
+              <div class="row">
+                <h1 style="color:#2D2D2D;font-family:Georgia;font-size:21px;">User Permissions</h1>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row" *ngFor="let permit of permissionKeys; let permitI=index;">
+                <div class="col-sm-3">
+                  <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" [formControlName]="permit.value" class="onoffswitch-checkbox" id="{{'myonoffswitch' + permitI}}" >
+                    <label class="onoffswitch-label" for="{{'myonoffswitch' + permitI}}">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <span style="color:#1E1E1E;font-family:Arial;font-size:14px;">{{permit.name}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center"><a (click)="onSubmit(permissionForm)" class="btn btn-blue">Save</a>
+            <a (click)="initForm()" class="btn btn-blue">Reset</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

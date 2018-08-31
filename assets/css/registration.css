@@ -1,0 +1,26 @@
+.emailErr{
+	color:red;
+	text-align:center;
+	text-align:center;
+	display:none;
+}
+.nameErr {
+	color:red;
+	text-align:center;
+	display:none;
+}
+.thankYou{
+	
+	color:#2D2D2D;font-family:Arial;font-size:24px;text-align:center;
+}
+.errMsg{
+	color:red;
+	text-align:center;
+	display:none;
+	font-weight:bold;
+}
+.headerMenu{
+    color:#C0C0C0 !important;
+    font-family:Georgia;
+    font-size:13px;
+}

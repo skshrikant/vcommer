@@ -1,0 +1,8 @@
+#admin user table
+
+CREATE TABLE `station_trd`.`admin_users` ( `id` INT UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT , `username` VARCHAR(128) NOT NULL , `email` VARCHAR(256) NOT NULL , `security_code` VARCHAR(128) NOT NULL , `password` VARCHAR(256) NOT NULL , `profile_image` MEDIUMBLOB , `online_status` BOOLEAN NOT NULL DEFAULT FALSE , `is_suspended` BOOLEAN NOT NULL DEFAULT FALSE , `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE , `created_by` INT NOT NULL , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `modified_by` INT NOT NULL , `modified_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`), UNIQUE `unique_email` (`email`(256)), UNIQUE `uniqe_scode` (`security_code`(128))) ENGINE = InnoDB;
+
+#permission table
+
+CREATE TABLE `station_trd`.`admin_permissions` ( `id` INT NOT NULL AUTO_INCREMENT , `admin_user_id` INT NOT NULL , `as_admin` BOOLEAN NOT NULL DEFAULT FALSE , `manage_sub_admin` BOOLEAN NOT NULL DEFAULT FALSE , `manage_member` BOOLEAN NOT NULL DEFAULT FALSE , `manage_carousel` BOOLEAN NOT NULL DEFAULT FALSE , `audit` BOOLEAN NOT NULL DEFAULT FALSE , `chat` BOOLEAN NOT NULL DEFAULT FALSE , `view_errors` BOOLEAN NOT NULL DEFAULT FALSE , `statistic` BOOLEAN NOT NULL DEFAULT FALSE , `account_alarm` BOOLEAN NOT NULL DEFAULT FALSE , PRIMARY KEY (`id`), UNIQUE `admin_user_id` (`admin_user_id`)) ENGINE = InnoDB;
+

@@ -1,0 +1,44 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+require(APPPATH.'/libraries/REST_Controller.php');
+
+
+class Auth extends REST_Controller {
+	public function __construct() {
+		parent::__construct ();
+		$this->load->library('session');
+	}
+	
+	public function login_post(){
+		$post = json_decode($this->security->xss_clean($this->input->raw_input_stream));
+		$this->load->model('backend/Admin_User_Model');
+		$user['email'] = $post->email;
+		$user['password'] = $post->password;
+		$user['security_code'] = $post->security_code;
+		
+		$authenticateUser = $this->Admin_User_Model->authenticate($user);
+
+		if(isset($authenticateUser)){
+			$this->session->set_userdata('admin_user',json_encode($authenticateUser));
+			$this->response($authenticateUser);
+		}else {
+            $this->response(NULL, 404);
+		}
+	}
+
+	function getLoggetInUser_get(){
+		$user =  $this->session->all_userdata();
+		print_r($user);
+		
+			// if(isset($user)){
+			// 	$this->response($user);
+			// }
+	}
+
+	function logout_get(){
+		$this->session->sess_destroy();
+		
+		echo $this->session->unset_userdata('admin_user');
+	}
+}

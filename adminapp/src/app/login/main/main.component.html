@@ -1,0 +1,55 @@
+
+<div class="mask"></div>
+<div class="container login-div">
+
+ <div class="row">
+ <div class="col-sm-6 col-sm-offset-3">
+  <div class="panel" style="border:none; border-radius:0px;">
+  <div class="panel-heading login-head">
+    <h2>Trade Station</h2>
+    <h4>Admin Panel Sign In</h4>
+  </div>
+  <div class="panel-body" *ngIf="loginForm" novalidate [formGroup]="loginForm">
+  <div class="form-group" >
+   <div class="row">
+     <div class="col-sm-8 col-sm-offset-2">
+      <input type="text" class="form-control input-box"  formControlName="email" placeholder="Email address">
+     </div>
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="row">
+     <div class="col-sm-8 col-sm-offset-2">
+      <input type="password" class="form-control input-box"  formControlName="password" placeholder="Password">
+     </div>
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="row">
+     <div class="col-sm-8 col-sm-offset-2">
+      <input type="text" class="form-control input-box "  formControlName="security_code" placeholder="Security Code">
+     </div>
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="row">
+     <div class="col-sm-4 col-sm-offset-4">
+      <button [disabled]="loginForm.invalid" (click)="onSubmit(loginForm.value)" class="btn btn-login btn-block">Login</button>
+     </div>
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="row">
+     <div class="col-sm-4 col-sm-offset-4 footer-logo text-center">
+       <h4>TRADE</h4> 
+       <h2>STATION</h2>
+     </div>
+   </div>
+  </div>
+  
+  </div>
+  <div class="panel-footer text-center" style="font-size:9.3px; color:#a9a9a9;">Copyrights | TRDSTATION 2013-2016@All Rights Reserved</div>
+  </div>
+ </div>
+ </div>
+</div>

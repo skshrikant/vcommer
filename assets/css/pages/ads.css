@@ -1,0 +1,346 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#Layer3
+{
+   background-color: transparent;
+}
+#Layer1
+{
+   background-color: transparent;
+   background-image: url(images/ad6.jpg);
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-size: cover;
+}
+#Layer97
+{
+   background-color: #FF6347;
+}
+#RollOver6 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver6 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver6 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver6 a .hover
+{
+   visibility: hidden;
+}
+#RollOver6 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver6 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver6 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Layer2
+{
+   background-color: #1E90FF;
+}
+#RollOver1 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver1 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver1 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver1 a .hover
+{
+   visibility: hidden;
+}
+#RollOver1 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver1 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver1 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver2 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver2 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver2 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver2 a .hover
+{
+   visibility: hidden;
+}
+#RollOver2 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver2 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver2 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver3 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver3 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver3 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver3 a .hover
+{
+   visibility: hidden;
+}
+#RollOver3 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver3 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver3 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver4 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver4 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver4 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver4 a .hover
+{
+   visibility: hidden;
+}
+#RollOver4 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver4 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver4 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver7 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver7 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver7 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver7 a .hover
+{
+   visibility: hidden;
+}
+#RollOver7 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver7 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver7 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text335 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text335 div
+{
+   text-align: left;
+}
+#Layer4
+{
+   background-color: #87CEEB;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.box1{
+	
+    width: 30%;
+	position: absolute; text-align: left; 
+    visibility: hidden;; z-index: 3866;
+	    background-color: rgba(0,0,0,.4);
+	    padding:20px;
+    border: 1px #FFFFFF solid;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 2px -1px 12px #000000;
+    -webkit-box-shadow: 2px -1px 12px #000000;
+    box-shadow: 2px -1px 12px #000000;
+    
+}
+.imgre{
+	 position: absolute;
+    float: right;     
+    left: 93%;
+    top: -8px;
+    width: 36px;
+}

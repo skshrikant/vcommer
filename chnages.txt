@@ -1,0 +1,9 @@
+myfiles.php
+removed code
+<!--
+														<a 
+															<?php if($myfilelist[$i]['file_access_type'] == 1) { ?> href="<?php  echo base_url();?>mystation/myfile/download/<?php echo $myfilelist[$i]['id'];?>" download="<?php  echo base_url();?>mystation/myfile/download/<?php echo $myfilelist[$i]['id'];?>" onclick="recordFileDownload(<?php echo $myfilelist[$i]['id'];?>);" 
+															<?php } else {?> href="#" data-toggle="modal"	data-target="#filepassword_modal" backdrop='static' onclick="passwordpoup(<?php echo $myfilelist[$i]['id'];?>);"
+															<?php } ?>
+														>
+														-->

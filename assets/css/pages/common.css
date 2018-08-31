@@ -1,0 +1,42 @@
+.btn-danger-custom {
+	background-color: #FF6347;
+    border-radius: 0px;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 5px 40px;
+}
+.btn-danger-custom:hover {
+	border:1px solid #FF6347;
+	background-color: #F5F5F5;
+    border-radius: 0px;
+    color: #FF6347 !important;
+    text-decoration: none;
+    padding: 5px 40px;
+}
+.headerMenu:hover {
+	color: #FF7F50 !important;
+}
+.search-btn {
+	background-color:#F05539;
+}
+ a.myterms {
+ 	color: #1E90FF;
+ 	text-decoration: none;
+ }   
+ a.myterms:hover {
+ 	color: #F05539;
+ 	text-decoration: underline;
+ }     
+ a.myterms:active {
+ 	color: #F05539  !important;
+ 	text-decoration: underline;
+ }  
+ a.myterms:visited {
+ 	color: #F05539 !important;
+ 	text-decoration: underline;
+ }    
+ a.active {
+ 	color: #F05539  !important;
+ 	text-decoration: underline;
+ }  
+ 
