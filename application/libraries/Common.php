@@ -132,7 +132,7 @@ class Common
         }
        //echo '<pre>'; print_r($offer);die;
         foreach ($offer as $key => $value) {
-            if (!empty($value['alert_viewed']) && $value['alert_viewed'] == 0) {
+            if ($value['alert_viewed'] == 0) {
                 $totalMyOrderAlertCount ++;
             }
         }
