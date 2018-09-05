@@ -198,6 +198,8 @@ class StockMarket extends MX_Controller {
 		$this->load->model('Product_Model', 'product' );
 		$this->load->model('Product_Model', 'product' );
 		$post = $this->product->getStockMarketPostById($id);
+		echo "<pre>";
+		print_r($post);exit;
 		$contact_details = $this->account->getBusinessContactDetails($busi_id);
 		$Country= $this->account->getCountry();
 		$this->template->set ( 'Country', $Country);
@@ -255,6 +257,7 @@ class StockMarket extends MX_Controller {
 	}
 	
 	public function newSellerOffer($id) {
+		print_r($id);exit;
 		$this->load->model ( 'Account_Model', 'account' );
 		$busi_id = $this->session->userdata('busi_id');
 		$this->load->model('Product_Model', 'product' );

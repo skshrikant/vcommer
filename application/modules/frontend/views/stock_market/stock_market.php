@@ -82,7 +82,7 @@ div.pp_pic_holder {
 	                                    </div>
 	                                    <div class="col-md-1 col-sm-2 col-xs-4" style="padding-right:2px;padding-left: 1px;">
 											<select class="search-box" name="country" id="country_name">
-												<option value=" ">Country</option>
+												<option value="">Country</option>
 												<?php foreach ($Country as $country){?>
 												<option value="<?php echo $country['name'];?>"><?php echo $country['name'];?></option>
 												<?php }?>
@@ -333,7 +333,7 @@ function openNewPostForm() {
 					                    message: 'Quantity is required'
 					                }
 					            }
-					        },							
+							},						
 					    }
 					}).on('success.form.bv', function(event,data) {
 						// Prevent form submission
