@@ -4874,7 +4874,7 @@
 			</div>
 			<div id="wb_Text11"
 				style="position: absolute; left: 186px; top: 263px; width: 300px; height: 16px; z-index: 96; text-align: left;">
-				<span style="color: #3C3C3C; font-family: Arial; font-size: 13px;">Trade Station Membership Subscription </span>
+				<span style="color: #3C3C3C; font-family: Arial; font-size: 13px;">Vcommers Membership Subscription </span>
 			</div>
 			<div id="wb_Text12"
 				style="position: absolute; left: 186px; top: 304px; width: 200px; height: 15px; z-index: 97; text-align: left;">
@@ -4969,14 +4969,14 @@
 				<span style="color: #3C3C3C; font-family: Georgia; font-size: 17px;"><u>Invoice
 						Details</u></span>
 			</div>
-			<div id="wb_Text107"
+			<!-- <div id="wb_Text107"
 				style="position: absolute; left: 350px; top: 36px; width: 72px; height: 14px; text-align: center; z-index: 116;">
-				<span style="color: #FA5C43; font-family: Arial; font-size: 11px;">TRADE</span>
-			</div>
+				<span style="color: #FA5C43; font-family: Arial; font-size: 11px;">V</span>
+			</div> -->
 			<div id="wb_Text106"
 				style="position: absolute; left: 353px; top: 47px; width: 72px; height: 25px; z-index: 117; text-align: left;">
 				<span
-					style="color: #FA5C43; font-family: Impact; font-size: 20px; letter-spacing: 0.07px;">STATION</span>
+					style="color: #FA5C43; font-family: Impact; font-size: 20px; letter-spacing: 0.07px;">VCommers</span>
 			</div>
 			<div id="wb_Image5"
 				style="position: absolute; left: 362px; top: 152px; width: 50px; height: 50px; z-index: 118;">
@@ -5088,6 +5088,7 @@
 					<img src="<?php echo asset_url();?>images/invoice-header.png">
 					</td>
 				</tr>
+				
 				<tr>
 					<td>
 						 <table>
@@ -5130,11 +5131,12 @@
 
 					</td>
 				</tr>
+
 				<tr>
 					<td style="padding:10px 50px;">
 					 <div style="border-bottom:1px solid #ddd; border-top:1px solid #ddd; height:40px; line-height:40px; text-align:right;">
 					 <span style="color:#2D2D2D;font-family:Arial;font-size:17px;">Total amount</span>
-					 <span style="color:#FFFFFF;font-family:Arial;font-size:16px; display:inline-block; height:38px; padding:0 20px; background:#FF6347; margin-top:1px;"><strong>USD <?php echo $invoice['amount'];?>.00</strong></span>
+					 <span style="color:#FFFFFF;font-family:Arial;font-size:16px; display:inline-block; height:38px; padding:0 20px; background:#FF6347; margin-top:1px;"><strong>USD <?php echo $sprice; ?>.00</strong></span>
 					 </div>
 					</td>
 				</tr>

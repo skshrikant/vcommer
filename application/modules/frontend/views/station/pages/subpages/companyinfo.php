@@ -576,7 +576,7 @@
 						<div id="worlofficediv">
 					  		
 					  	</div>
-						<div class="row info-row" id="addmorediv" <?php if(count($branches) ==0) { ?> style="display: none;" <?php } ?>>
+						<div class="row info-row" id="addmorediv" >
 					  		<div class="col-sm-2">
 								<div class="form-group">
 									<a href="javascript:addMoreOffice();" class="btn pull-left"><img src="<?php echo asset_url(); ?>images/add.png">
