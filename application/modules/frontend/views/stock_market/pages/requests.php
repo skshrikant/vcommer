@@ -72,7 +72,7 @@ if(count($bposts) > 0) {
 					<?php } else { ?>
 						<img src="<?php echo asset_url(); ?>images/CommMember.png" id="Image49" alt="" class="img25" style="opacity: 0.15;" /> 
 					<?php } ?>
-					<<?php $buyer_request = $product['stock_buyer_count']+$product['bstation_post_count']; ?>
+					<?php $buyer_request = $product['stock_buyer_count']+$product['bstation_post_count']; ?>
 					<?php if(!empty($buyer_request)) { ?>
 						<img src="<?php echo asset_url(); ?>images/buyer-request.png" id="Image49" alt="" class="img25" />
 					<?php } else { ?>

@@ -2201,7 +2201,7 @@ class Product_Model extends CI_Model {
     	$this->db->where('a.id', $id);
     	$query = $this->db->get();
 			$result = $query->result_array();
-			print_r($this->db->last_query());exit;
+			// print_r($this->db->last_query());exit;
     	return $result;
     }
     
