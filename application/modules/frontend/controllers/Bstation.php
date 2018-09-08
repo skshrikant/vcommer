@@ -354,6 +354,7 @@ class Bstation extends MX_Controller {
 		$params['busi_id'] = $busi_id;
 		$this->load->model('Product_Model', 'product' );
 		$posts = $this->product->searchBusinessStationPosts($params);
+		
 		$bposts = $this->product->searchBuyerBusinessStationPosts($params);
 		$contact_details = $this->account->getBusinessContactDetails($busi_id);
 		$this->template->set ( 'posts', $posts);

@@ -78,6 +78,7 @@ ul.typeahead li a:hover {
 								<input type="file" name="postphoto4" id="postphoto4" class="post-background" onchange="setBackgroundSize('postphoto4',this,75);" style="display:inline;"/>
 							</div>
 							<div class="messageContainer"></div>
+							<div class="messageContainer errormsg has-error"></div>
 						</div>
 					</div>
 					<?php } else { ?>
@@ -94,6 +95,7 @@ ul.typeahead li a:hover {
 								<input type="file" name="postphoto4" id="postphoto4" class="post-background" onchange="setBackgroundSize('postphoto4',this,75);" style="display:inline;"/>
 							</div>
 							<div class="messageContainer"></div>
+							<div class="messageContainer errormsg has-error"></div>
 						</div>
 					</div>
 					<?php } ?>

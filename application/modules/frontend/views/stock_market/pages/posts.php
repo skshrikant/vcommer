@@ -180,9 +180,10 @@ if(count($posts) > 0) {
 					<br> <span class="color1"><br><?php echo $product['stockdesc'];?></span>
 				</div>
 				<div class="col-md-2 p1" style="padding-left: 40px;">
+				
 					<?php if($product['busi_id'] != $busi_id) { ?>
 					<div id="RollOver2" class="img45">
-						<a href="javascript:openBuyerRequestForm(<?php echo $product['post_id'];?>);" target="_self"> 
+						<a href="javascript:openBuyerRequestForm(<?php echo $product['post_id'];?>,<?php echo $product['user_id'];?>);" target="_self"> 
 							<img class="hover" alt="Send Inquiry" src="<?php echo asset_url(); ?>images/Active/inquirytomato.png" /> <span>
 							<img alt="Send Inquiry" src="<?php echo asset_url(); ?>images/Link/inquirytomato.png"></span>
 						</a>
@@ -241,12 +242,12 @@ if(count($posts) > 0) {
 <script>
 $("a[data-rel='myprettyPhoto_SlideShow<?php echo $key;?>[SlideShow<?php echo $key;?>]']").attr('rel', 'myprettyPhoto_SlideShow<?php echo $key;?>[SlideShow<?php echo $key;?>]');
 $("a[rel^='myprettyPhoto_SlideShow<?php echo $key;?>']").prettyPhoto({theme:'facebook',social_tools:false});
-function openBuyerRequestForm(postid) {
+function openBuyerRequestForm(postid,userid) {
 	<?php if($tscategory_id != 3) { ?>
 	customAlert("Sorry.. Only buyers have access to send inquiry to seller/shipper posts.");
 	<?php } else { ?>
 	<?php if($contact_details[0]['accept_offer'] == 1 && $contact_details[0]['accept_email'] == 1 && $contact_details[0]['step'] == 2) { ?>
-		popupwnd('<?php echo base_url();?>stockmarket/buyer_request/<?php echo $product['post_id'];?>','no','no','no','yes','yes','no','600','50','555','750')
+		popupwnd('<?php echo base_url();?>stockmarket/buyer_request/'+postid+'/'+userid,'no','no','no','yes','yes','no','600','50','555','750')
 	<?php } else if($contact_details[0]['step'] < 2) { ?>
 		customAlert('Sorry.. You have to create you Desksite to send posts or communicate with our members.. It\'s so easy .. just follow the steps shown here-under:<br> 1. Login and click on your profile image, then select Continue.<br> 2. Complete your registration till we create your Station.<br> 3. In " My Station" click on " My Desksite" and follow the steps to build it.');
 	<?php } else if($contact_details[0]['accept_offer'] == 0 || $contact_details[0]['accept_email'] == 0) { ?>

@@ -333,12 +333,19 @@ function openNewPostForm() {
 					                    message: 'Quantity is required'
 					                }
 					            }
-							},						
+							},
+													
 					    }
 					}).on('success.form.bv', function(event,data) {
 						// Prevent form submission
 						event.preventDefault();
-						addPostContent();
+						var imgselect = $('#cimg1').val();
+						console.log(imgselect);
+						if(imgselect != ''){
+							addPostContent();
+						}else{
+							$('.errormsg').html('<small class="help-block" data-bv-validator="notEmpty" data-bv-result="INVALID" style="">First Image is manadatory!</small>');
+						}
 					});
 				}
 			},'html');
@@ -348,7 +355,9 @@ function openNewPostForm() {
 	} else {
 		customAlert("Sorry.. Only Black Horse members can send posts and deal with global buyers, <strong>Please upgrade your membership</strong>.");
 	}
+
 }
+
 
 
 function addPostContent() {
