@@ -255,7 +255,6 @@ class StockMarket extends MX_Controller {
 	}
 	
 	public function newSellerOffer($id) {
-		print_r($id);exit;
 		$this->load->model ( 'Account_Model', 'account' );
 		$busi_id = $this->session->userdata('busi_id');
 		$this->load->model('Product_Model', 'product' );

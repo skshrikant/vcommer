@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo asset_url();?>css/custom.css">
     <style>
 #RollOver26 a
 {
@@ -371,14 +372,16 @@
 					<p class="text3">View The Latest Stock Goods Requests, Boosted By Global Buyers..</p>
 			    </div>
 			   </div>
-			      <div class="maxheight1 bg1">
-						<div class="row" style="margin: 0px;background-color: #808080;">
-							<h3 style="color: #fff; text-align: center;">
-								<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED WORLD </span><br> 
-								<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">BUYERS</span>
-							</h3>
-							<div class="text-center displaydesktop" style="margin-left:7px;margin-bottom:15px;">
-								<img src="<?php echo asset_url(); ?>images/img0123.png" class="img-responsive">
+		      <div class="maxheight1 bg1">
+			      <div class="row" style="margin: 0px">
+							<div id="wb_Text275" style="margin-top: 20px;text-align:center;">
+								<span style="color:#4B4B4B;font-family:Arial;font-size:13px;">FEATURED WORLD</span>
+							</div>
+							<div id="wb_Text274" style="text-align:center;">
+								<span style="color:#4B4B4B;font-family:Impact;font-size:20px;letter-spacing:0.07px;">BUYERS</span>
+							</div>
+							<div id="wb_Image141" style="height:242px;">
+								<img src="<?php echo asset_url(); ?>images/img0123.png" class="img-responsive" style="width: 223px;padding: 5px;margin-left: 4px;">
 							</div>
 						</div>
 		    	</div>
@@ -393,60 +396,79 @@
                       $i= 0;
                         foreach($featuredBuyers as $featuredBuyer){
                         if($i%2 == 0){
-									$frame = $i; 
-										?>
-                        			<div class="frame"  style="<?php if ($i != 0) { ?> display: none;<?php } ?>;width:100%;">
-                        			<?php } $i++; ?>
-                            <div id="Layer147" onmouseenter="ShowObjectWithEffect('Buyer_holder2<?php echo $i;?>', 1, 'dropup', 300, 'swing');return false;"
-									onmouseleave="ShowObjectWithEffect('Buyer_holder2<?php echo $i;?>', 0, 'fade', 500, 'swing');return false;" style="position: relative;width:100%;">
-                                <div id="wb_Image226" style="position: relative;width: 100%;padding-top:4px;">
-                                	<?php if ($featuredBuyer['picture'] != "" && file_exists("assets/".$featuredBuyer['picture'])){ ?>
-                                    	<img src="<?php echo asset_url().''.$featuredBuyer['picture']; ?>" id="Image226" alt=""  class="style86" style="display: block;margin: auto;max-height: 246px;">
-                                    <?php }else{ ?>
-			                            <img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:210px;height:246px;display: block;margin: auto;">
-			                        <?php } ?>
+													$frame = $i; 
+														?>
+                    			<div class="frame" >
+                  			<?php } $i++; ?>
+    
+											<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:226px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
+											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:226px;height:79px;z-index:535;">
+												<div id="wb_Text39" style="position:absolute;left:65px;top:15px;width:135px;height:14px;z-index:530;text-align:left;">
+													<span style="color:#000000;font-family:Georgia;font-size:11px;">
+														<?php if($featuredBuyer['contact_person_name'] != ""){ ?>
+															<strong><?php echo $featuredBuyer['contact_person_name'];?></strong>
+														<?php }else{ ?>
+															<strong><?php echo $featuredBuyer['contact_person'];?></strong>
+														<?php } ?>
+													</span>
+												</div>
+												<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
+													<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
+												</div>
+												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:226px;height:19px;z-index:532;">
+													<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">
+														<span style="color:#000000;font-family:Arial;font-size:11px;">
+														<strong><?php echo $featuredBuyer['product_name']; ?></strong>
+														</span>
+													</div>
+												</div>
 
-                                </div>
-                              
-                                <div id="Layer144" class="style15" style="width: 100%;">
-                                    <div id="wb_Text434" class="style16">
-                                        <span class="fontstyle-4"><strong><?php echo $featuredBuyer['contact_person_name'];?></strong></span>
-                                    </div>
-                                    <div id="wb_Text435" class="style17">
-                                        <span class="fontstyle-5"><?php echo $featuredBuyer['position'];?></span></div>
-                                    <div id="Layer148" class="style18">
-                                        <div id="wb_Image48" class="style19">
-                                            <img src="<?php echo asset_url().''.$featuredBuyer['contact_person_flag']; ?>" id="Image48" alt="">
-                                        </div>
-                                    </div>
-                                    <div id="Layer150" class="style20" style="width:100%;">
-                                        <div id="wb_Text440" class="style21">
-                                            <span class="fontstyle-6"><strong><?php echo $featuredBuyer['product_name']; ?></strong></span></div>
-                                    </div>
-                                </div>
-                                
-                                <div id="Buyer_holder2<?php echo $i;?>" class="style22fs14">
-                                    <div id="wb_Image521" class="style23">
-                                        <a href="javascript:openBuyer(<?php echo $featuredBuyer['id']; ?>)"><img src="<?php echo asset_url(); ?>images/window.png" id="Image5" alt=""></a>
-                                    </div>
-                                    <div id="RollOver12" class="style24">
-                                        <a href="<?php echo base_url();?>buyer/profile/<?php echo $featuredBuyer['busi_id'];?>" target="_blank">
-                                            <img class="hover" alt="" src="<?php echo asset_url(); ?>images/desktoporange.gif">
-                                            <span><img alt="" src="<?php echo asset_url(); ?>images/desktopblack.png"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php if($frame+2 == $i){ ?>
-                            </div>
-                            <?php } }?>
+												<div id="Layer54" style="position:absolute;text-align:left;visibility:hidden;left:2px;top:14px;width:207px;height:46px;z-index:533;">
+													<div id="wb_Image37" style="position:absolute;left:64px;top:5px;width:35px;height:35px;z-index:528;">
+														<a href="#" onclick="ShowObjectWithEffect('Layer_buyer', 1, 'scale', 500, 'swing');return false;">
+														<img src="images/window.png" id="Image37" alt="">
+														</a>
+													</div>
+													<div id="RollOver13" style="position:absolute;left:113px;top:6px;overflow:hidden;width:35px;height:35px;z-index:529">
+														<a href="#" target="_blank">
+														<img class="hover" alt="" src="images/desktoporange.gif">
+														<span>
+															<img alt="" src="images/desktopblack.png">
+														</span>
+														</a>
+													</div>
+												</div>
+												<div id="wb_Image38" style="position:absolute;left:12px;top:9px;width:42px;height:42px;z-index:534;">
+													<img src="<?php echo asset_url();?>images/flags/<?php echo $featuredBuyer['flag'];?>" id="Image38" alt="">
+												</div>
+											</div>
+
+
+											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:226px;height:226px;z-index:536;">
+												<a href="#" onclick=";return false;">
+													<?php if ($featuredBuyer['picture'] != "" && file_exists("assets/".$featuredBuyer['picture'])){ ?>
+														<img src="<?php echo asset_url().''.$featuredBuyer['picture']; ?>" id="Image39" alt=""  class="style86" style="width:226px !important;max-height:210px !important;">
+													<?php }else{ ?>
+														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:226px;height:210px;">
+													<?php } ?>
+												</a>
+											</div>
+										</div>
+
+                        <?php if($frame+2 == $i){ ?>
+        	                </div>
+                      <?php } }?>
                     </div>
-                    <div id="Carousel3_back" class="style51">
-                        <a href=""><img alt="Back" src="<?php echo asset_url(); ?>images/previoustxt0blk.png"></a>
-                    </div>
-                    <div id="Carousel3_next" class="style53">
-                        <a style="cursor:pointer"><img alt="Next" src="<?php echo asset_url(); ?>images/nexttxt0blk.png"></a>
-                    </div>
+                    <div id="Carousel1_back" style="position:absolute;left:15px;top:91%;width:35px;height:13px;z-index:999">
+											<a style="cursor:pointer">
+											<img alt="Back" style="border-width:0" src="images/previoustxt0blk.png">
+											</a>
+										</div>
+										<div id="Carousel1_next" style="position:absolute;right:15px;top:91%;width:35px;height:13px;z-index:999">
+											<a style="cursor:pointer">
+											<img alt="Next" style="border-width:0" src="images/nexttxt0blk.png">
+											</a>
+										</div>
                 </div>
             </div>
         </div>

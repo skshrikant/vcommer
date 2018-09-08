@@ -649,7 +649,7 @@ ul.share{
 						<div id="wb_Text274" style="text-align:center;">
 							<span style="color:#4B4B4B;font-family:Impact;font-size:20px;letter-spacing:0.07px;">SELLERS</span>
 						</div>
-						<div id="wb_Image141" style="height:203px;">
+						<div id="wb_Image141" style="height:242px;">
 							<img src="<?php echo asset_url(); ?>images/ts/Fsellersok.png" class="img-responsive">
 						</div>
 					</div>
@@ -657,7 +657,7 @@ ul.share{
 		    	<div id="Layer2" class="style2">
        			  <div id="Layer2_Container" class="style3">
            			 <div id="Layer138">
-               			 <div id="wb_Carousel1" style="width:216px;height:655px;z-index:660;overflow:hidden;">
+               			 <div id="wb_Carousel1" style="width:226px;height:655px;z-index:660;overflow:hidden;">
 							<div  id="Carousel1" style="position:absolute;">
                     		
 								<?php 
@@ -669,8 +669,8 @@ ul.share{
                         			<div class="frame">
                         				<?php } $i++; ?>
 										
-										<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:209px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
-											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:209px;height:79px;z-index:535;">
+										<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:226px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
+											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:226px;height:79px;z-index:535;">
 												<div id="wb_Text39" style="position:absolute;left:65px;top:15px;width:135px;height:14px;z-index:530;text-align:left;">
 													<span style="color:#000000;font-family:Georgia;font-size:11px;">
 														<?php if($featuredSeller['contact_person_name'] != ""){ ?>
@@ -683,7 +683,7 @@ ul.share{
 												<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
 													<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
 												</div>
-												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:209px;height:19px;z-index:532;">
+												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:226px;height:19px;z-index:532;">
 													<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">
 														<span style="color:#000000;font-family:Arial;font-size:11px;">
 														<strong><?php echo $featuredSeller['product_name']; ?></strong>
@@ -712,12 +712,12 @@ ul.share{
 											</div>
 
 
-											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:209px;height:209px;z-index:536;">
+											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:226px;height:226px;z-index:536;">
 												<a href="#" onclick=";return false;">
 													<?php if ($featuredSeller['picture'] != "" && file_exists("assets/".$featuredSeller['picture'])){ ?>
-														<img src="<?php echo asset_url().''.$featuredSeller['picture']; ?>" id="Image39" alt=""  class="style86" style="width:210px !important;max-height:210px !important;">
+														<img src="<?php echo asset_url().''.$featuredSeller['picture']; ?>" id="Image39" alt=""  class="style86" style="width:226px !important;max-height:210px !important;">
 													<?php }else{ ?>
-														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:210px;height:210px;">
+														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:226px;height:210px;">
 													<?php } ?>
 												</a>
 											</div>
@@ -730,12 +730,12 @@ ul.share{
                            	 <?php }?>
                    			 </div>
 							
-							<div id="Carousel1_back" style="position:absolute;left:15px;top:37%;width:35px;height:13px;z-index:999">
+							<div id="Carousel1_back" style="position:absolute;left:15px;top:91%;width:35px;height:13px;z-index:999">
 								<a style="cursor:pointer">
 								<img alt="Back" style="border-width:0" src="images/previoustxt0blk.png">
 								</a>
 							</div>
-							<div id="Carousel1_next" style="position:absolute;right:15px;top:37%;width:35px;height:13px;z-index:999">
+							<div id="Carousel1_next" style="position:absolute;right:15px;top:91%;width:35px;height:13px;z-index:999">
 								<a style="cursor:pointer">
 								<img alt="Next" style="border-width:0" src="images/nexttxt0blk.png">
 								</a>
@@ -745,435 +745,151 @@ ul.share{
            			 
            			  <div class="maxheight1 bg2">
 		                	<div class="row" style="margin: 0px">
-								<div id="Layer212" style="position:absolute;text-align:left;width:210px;height:271px;z-index:2513;">
+								<div id="Layer212" style="position:absolute;text-align:left;width:226px;height:870px;z-index:2513;">
 							
-									<div id="Layer213" style="position:absolute;text-align:left;left:0px;top:0px;width:210px;height:273px;z-index:2311;">
-									<div id="wb_Text223" style="position:absolute;left:19px;top:32px;width:180px;height:25px;text-align:center;z-index:2212;">
+									<div id="Layer213" style="position:absolute;text-align:left;left:0px;top:0px;width:226px;height:273px;z-index:2311;">
+									<div id="wb_Text223" style="position:absolute;top:32px;width:226px;height:25px;text-align:center;z-index:2212;">
 										<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">PRODUCTS VIDEOS</span></div>
-									<div id="wb_Image170" style="position:absolute;left:2px;top:61px;width:211px;height:211px;z-index:2213;">
+									<div id="wb_Image170" style="position:absolute;left:2px;top:61px;width:226px;height:226px;z-index:2213;">
 										<img src="<?php echo asset_url(); ?>images/porcube.png" id="Image170" alt=""></div>
-									<div id="wb_Text224" style="position:absolute;left:20px;top:16px;width:179px;height:16px;text-align:center;z-index:2214;">
+									<div id="wb_Text224" style="position:absolute;top:16px;width:226px;height:16px;text-align:center;z-index:2214;">
 										<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED </span></div>
 									</div>
 								</div>
 			                </div>
 			            </div>
 			            <div id="">
-						<div id="wb_Carousel7" style="position:absolute;left:0px;top:925px;width:216px;height:595px;z-index:2312;overflow:hidden;">
-      <div id="Carousel7" style="position:absolute">
-        <div class="frame">
-          <div id="Layer214" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2229;">
-            <div id="wb_Text225" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2216;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Biscuat Auto-Machines...</a></strong></span></div>
-            <div id="wb_Text226" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2217;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer15" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2218;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer15">
-              </video>
-            </div>
-            <div id="Layer215" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2219;">
-              <div id="wb_Image171" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2215;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image171" alt=""></a></div>
-            </div>
-            <div id="wb_Text213" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2220;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text214" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2221;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer200" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2230;">
-            <div id="wb_Text205" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2223;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Brown Shoes</a></strong></span></div>
-            <div id="wb_Text206" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2224;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer13" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2225;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer13">
-              </video>
-            </div>
-            <div id="Layer201" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2226;">
-              <div id="wb_Image161" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2222;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image161" alt=""></a></div>
-            </div>
-            <div id="wb_Text207" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2227;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text208" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2228;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-        <div class="frame" style="display:none">
-          <div id="Layer202" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2245;">
-            <div id="wb_Text209" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2232;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Other Product</a></strong></span></div>
-            <div id="wb_Text210" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2233;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer14" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2234;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer14">
-              </video>
-            </div>
-            <div id="Layer203" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2235;">
-              <div id="wb_Image162" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2231;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image162" alt=""></a></div>
-            </div>
-            <div id="wb_Text211" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2236;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text212" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2237;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer204" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2246;">
-            <div id="wb_Text215" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2239;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Any Product</a></strong></span></div>
-            <div id="wb_Text216" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2240;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer16" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2241;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer16">
-              </video>
-            </div>
-            <div id="Layer205" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2242;">
-              <div id="wb_Image163" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2238;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image163" alt=""></a></div>
-            </div>
-            <div id="wb_Text217" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2243;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text218" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2244;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-        <div class="frame" style="display:none">
-          <div id="Layer206" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2261;">
-            <div id="wb_Text219" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2248;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Biscyat Auto-Machines...</a></strong></span></div>
-            <div id="wb_Text220" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2249;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer17" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2250;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer17">
-              </video>
-            </div>
-            <div id="Layer207" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2251;">
-              <div id="wb_Image164" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2247;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image164" alt=""></a></div>
-            </div>
-            <div id="wb_Text221" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2252;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text222" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2253;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer208" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2262;">
-            <div id="wb_Text227" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2255;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Auto-Machines</a></strong></span></div>
-            <div id="wb_Text228" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2256;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer18" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2257;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer18">
-              </video>
-            </div>
-            <div id="Layer209" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2258;">
-              <div id="wb_Image165" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2254;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image165" alt=""></a></div>
-            </div>
-            <div id="wb_Text229" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2259;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text230" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2260;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-        <div class="frame" style="display:none">
-          <div id="Layer210" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2277;">
-            <div id="wb_Text231" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2264;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Biscuat Machines</a></strong></span></div>
-            <div id="wb_Text232" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2265;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer19" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2266;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer19">
-              </video>
-            </div>
-            <div id="Layer211" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2267;">
-              <div id="wb_Image166" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2263;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image166" alt=""></a></div>
-            </div>
-            <div id="wb_Text233" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2268;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text234" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2269;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer216" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2278;">
-            <div id="wb_Text235" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2271;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Machines</a></strong></span></div>
-            <div id="wb_Text236" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2272;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer20" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2273;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer20">
-              </video>
-            </div>
-            <div id="Layer217" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2274;">
-              <div id="wb_Image167" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2270;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image167" alt=""></a></div>
-            </div>
-            <div id="wb_Text237" style="position:absolute;left:48px;top:220px;width:118px;height:16px;text-align:center;z-index:2275;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text238" style="position:absolute;left:53px;top:241px;width:108px;height:16px;text-align:center;z-index:2276;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-        <div class="frame" style="display:none">
-          <div id="Layer218" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2293;">
-            <div id="wb_Text239" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2280;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Biscyat Auto-Machines...</a></strong></span></div>
-            <div id="wb_Text240" style="position:absolute;left:20px;top:31px;width:172px;height:30px;text-align:center;z-index:2281;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer21" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2282;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer21">
-              </video>
-            </div>
-            <div id="Layer219" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2283;">
-              <div id="wb_Image168" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2279;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image168" alt=""></a></div>
-            </div>
-            <div id="wb_Text241" style="position:absolute;left:48px;top:220px;width:118px;height:19px;text-align:center;z-index:2284;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text242" style="position:absolute;left:53px;top:241px;width:108px;height:15px;text-align:center;z-index:2285;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer220" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2294;">
-            <div id="wb_Text243" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2287;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Auto-Machines</a></strong></span></div>
-            <div id="wb_Text244" style="position:absolute;left:20px;top:31px;width:172px;height:30px;text-align:center;z-index:2288;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer22" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2289;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer22">
-              </video>
-            </div>
-            <div id="Layer221" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2290;">
-              <div id="wb_Image169" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2286;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image169" alt=""></a></div>
-            </div>
-            <div id="wb_Text245" style="position:absolute;left:48px;top:220px;width:118px;height:19px;text-align:center;z-index:2291;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text246" style="position:absolute;left:53px;top:241px;width:108px;height:15px;text-align:center;z-index:2292;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-        <div class="frame" style="display:none">
-          <div id="Layer222" style="position:absolute;text-align:left;left:2px;top:285px;width:212px;height:269px;z-index:2309;">
-            <div id="wb_Text247" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2296;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Biscuat Auto</a></strong></span></div>
-            <div id="wb_Text248" style="position:absolute;left:20px;top:31px;width:172px;height:30px;text-align:center;z-index:2297;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer23" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2298;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer23">
-              </video>
-            </div>
-            <div id="Layer223" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2299;">
-              <div id="wb_Image172" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2295;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image172" alt=""></a></div>
-            </div>
-            <div id="wb_Text249" style="position:absolute;left:48px;top:220px;width:118px;height:19px;text-align:center;z-index:2300;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text250" style="position:absolute;left:53px;top:241px;width:108px;height:15px;text-align:center;z-index:2301;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-          <div id="Layer224" style="position:absolute;text-align:left;left:2px;top:3px;width:212px;height:269px;z-index:2310;">
-            <div id="wb_Text251" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2303;">
-              <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5"
-                    onclick=";return false;">Wool Auto-Machines...</a></strong></span></div>
-            <div id="wb_Text252" style="position:absolute;left:20px;top:31px;width:172px;height:30px;text-align:center;z-index:2304;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;">Brown classic shoes with good price, with
-                good price... </span></div>
-            <div id="wb_MediaPlayer24" style="position:absolute;left:0px;top:81px;width:212px;height:118px;z-index:2305;">
-              <video src="http://www.trdstation.com\Cheese.mp4" id="MediaPlayer24">
-              </video>
-            </div>
-            <div id="Layer225" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:212px;height:39px;z-index:2306;">
-              <div id="wb_Image173" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2302;">
-                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
-                    src="images/view2.png" id="Image173" alt=""></a></div>
-            </div>
-            <div id="wb_Text253" style="position:absolute;left:48px;top:220px;width:118px;height:19px;text-align:center;z-index:2307;">
-              <span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ 1000 / Pack</strong></span></div>
-            <div id="wb_Text254" style="position:absolute;left:53px;top:241px;width:108px;height:15px;text-align:center;z-index:2308;">
-              <span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. 1000 Pcs</strong></span></div>
-          </div>
-        </div>
-      </div>
-      <div id="Carousel7_back" style="position:absolute;left:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer"><img
-            alt="Back" style="border-width:0" src="images/previoustxt0.png"></a></div>
-      <div id="Carousel7_next" style="position:absolute;right:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer"><img
-            alt="Next" style="border-width:0" src="images/nexttxt0.png"></a></div>
-	</div>
+						
 	
-			                <div id="wb_Carousel2" class="style4" style="width:100%;">
-			                    <div id="Carousel2" style="position:absolute;width: 100%;">
+			                <div id="wb_Carousel7" style="position:absolute;left:0px;top:927px;width:226px;height:595px;z-index:23121;overflow:hidden;">
+			                    <div id="Carousel7" style="position:absolute">
 			                    <?php $i =0;
 			                    foreach ($featuredProductVideo as $featuredVideo) {
 			                    if($i%2 == 0){
 									$frame = $i; 
 										?>
-			                        <div class="frame" class="style5" <?php if ($i != 0) { ?> style="display: none;" <?php } ?>>
+			                        <div class="frame">
 			                        	<?php }else{ ?>
-			                        		<br/>
+			                        	
 			                        	<?php } $i++; ?>
-			                            <div id="Layer39" class="fs11" onmouseenter="ShowObjectWithEffect('holder<?php echo $i; ?>', 1, 'dropup', 300, 'swing');return false;" onmouseleave="ShowObjectWithEffect('holder<?php echo $i; ?>', 0, 'fade', 500, 'swing');return false;" style="position: relative;width:100%;">
-			                                <div id="wb_Text78" class="fs1">
-			                                    <span><strong><?php echo $featuredVideo['name'];?></strong></span>
-			                                </div>
-			                                <div id="wb_Text77" class="fs2">
-			                                    <span class="fs3"><?php echo substr($featuredVideo['description'], '0', '30');?> ...</span>
-			                                </div>
-			                                <br/>
-			                                <div id="wb_MediaPlayer1" class="fs9">
-			                                    <video src="<?php echo asset_url().''.$featuredVideo['vedio_file']; ?>" controls="controls" style="max-width: 235px;max-height:150px;">
-			                                    </video>
-			                                </div>
-			                                <div id="wb_Text79" class="fs6">
-			                                    <span class="fs4"><strong><?php echo $featuredVideo['unit_price'];?> / Set</strong></span>
-			                                </div>
-			                                <div id="wb_Text80" class="fs7">
-			                                    <span class="fs5"><strong>Min. Qty. <?php echo $featuredVideo['quantity'].' '.$featuredVideo['unit'];?></strong></span>
-			                                </div>
-			                                
-			                                <div id="Layer29" class="fs13">
-			                                </div>
-			                                <div id="holder<?php echo $i;?>" class="fs14" style="width:235px;">
-			                                    <div id="wb_Image33" class="fs15">
-			                                        <a href="javascript:openVideo(<?php echo $featuredVideo['id'];?>)"><img src="<?php echo asset_url(); ?>images/play.png" id="Image33" alt="" width="35px" height="35px"></a>
-			                                    </div>
-			                                    <div id="wb_Image34" class="fs16">
-			                                        <a href="./video/details/<?php echo $featuredVideo['id'];?>" target="_blank"><img src="<?php echo asset_url(); ?>images/view2.png" id="Image34" alt="" width="35px" height="35px"></a>
-			                                    </div>
-			                                </div>
+			                            <div id="<?= ($i%2 == 0) ? 'Layer214' : 'Layer200' ?>" style="position:absolute;text-align:left;left:2px;width:223px;height:269px;<?= ($i%2 == 0) ? 'z-index:2229;top:3px;' : 'top:285px;z-index:2230;'; ?>">
+
+                                    <div id="<?= ($i%2 == 0) ? 'wb_Text225' : 'wb_Text205' ?>" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2216;">
+          												    <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5" onclick=";return false;"><?php echo $featuredVideo['name'];?></a></strong></span>
+          												  </div>
+
+																		<div id="wb_Text226" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2217;">
+												              <span style="color:#787878;font-family:Arial;font-size:12px;"><?php echo substr($featuredVideo['description'], '0', '50');?></span>
+          													</div>
+
+			                              <div id="wb_MediaPlayer15" style="position:absolute;left:0px;top:81px;width:223px;height:118px;z-index:2218;">
+												              <video src="<?php echo asset_url().''.$featuredVideo['vedio_file']; ?>" id="MediaPlayer15">
+												              </video>
+												            </div>  
+			                              <div id="Layer215" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:223px;height:39px;z-index:2219;">
+												              <div id="wb_Image171" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2215;">
+												                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
+												                    src="images/view2.png" id="Image171" alt=""></a></div>
+												            </div> 
+
+												            <div id="wb_Text213" style="position:absolute;top:220px;width:223px;height:16px;text-align:center;z-index:2220;">
+              												<span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ <?php echo $featuredVideo['unit_price'];?>  / Pack</strong></span>
+            												</div> 
+
+            												<div id="wb_Text214" style="position:absolute;top:241px;width:223px;height:16px;text-align:center;z-index:2221;">
+              												<span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. <?php echo $featuredVideo['quantity'].' '.$featuredVideo['unit'];?></strong></span>
+              											</div>
+
 			                            </div>
 			                        <?php if($frame+2 == $i){ ?>
 			                        </div>
 			                        <?php } } ?>
 			                    </div>
-			                    <div id="Carousel2_back" class="fs18">
-			                        <a style="cursor:pointer"><img alt="Back" style="border-width:0" src="<?php echo asset_url(); ?>images/previoustxt0.png"></a>
-			                    </div>
-			                    <div id="Carousel2_next" class="fs17">
-			                        <a style="cursor:pointer"><img alt="Next" style="border-width:0" src="<?php echo asset_url(); ?>images/nexttxt0.png"></a>
-			                    </div>
+                          <div id="Carousel7_back" style="position:absolute;left:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer">
+                          	<img alt="Back" style="border-width:0" src="images/previoustxt0.png"></a></div>
+      										<div id="Carousel7_next" style="position:absolute;right:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer">
+      										<img alt="Next" style="border-width:0" src="images/nexttxt0.png"></a></div>
 			                </div>
 			            </div>
 			        </div>
         		<!-- fearture videos end-->
-        		<!-- feature products -->
-		        <div class="sp">
-		            <div class="maxheight1 bg3">
-		                <div class="row" style="margin: 0px">
-		                    <h3 style="color: #fff; text-align: center;">
-								<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED</span><br> 
-								<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">PRODUCTS</span>
-							</h3>
-		                    <div class="text-center displaydesktop">
-		                        <img src="<?php echo asset_url(); ?>images/dice0.png" class="img-responsive">
-		                    </div>
-		                </div>
-		            </div>
-		            <div id="Layer24">
-		                <div id="wb_Carousel1" class="style4" style="width: 100%;">
-		                    <div id="Carousel1" style="position:absolute;width: 100%;">
-		                    <?php $i =0;
-		                    foreach ( $featuredProducts as $key=>$featuredProduct) {
-		                    	if($i%2 == 0) {
-		                    		$frame = $i; 
-			                    	?>
-		                        <div class="frame" <?php if ($i != 0) { ?> style="display: none;" <?php } ?>>
-		                        <?php } $i++; ?>
-		                            <div id="Layer134" class="product111" style="position:relative;width: 100%;" onmouseenter="ShowObjectWithEffect('holder7-<?php echo $key;?>', 1, 'dropup', 300, 'swing');return false;" onmouseleave="ShowObjectWithEffect('holder7-<?php echo $key;?>', 0, 'fade', 500, 'swing');return false;">
-		                                <div id="wb_Text417" class="product212">
-		                                    <span class="product313"><strong><?php echo $featuredProduct['name'];?></strong></span></div>
-		                                <div id="wb_Text418" class="product414">
-		                                    <span class="product5"><?php echo substr($featuredProduct['description'], '0', '35');?>...</span></div>
-		                                <div id="wb_Image128" class="product6">
-		                                    <img src="<?php echo asset_url().''.$featuredProduct['main_image']; ?>" id="Image128" alt="" style="width:190px;height:155px;"></div>
-		                                <div id="wb_Text419" class="product7">
-		                                    <span class="product8"><strong><?php echo $featuredProduct['unit_price'];?> / Pc</strong></span></div>
-		                                <div id="wb_Text420" class="product9">
-		                                    <span class="product10"><strong>Min. Qty. <?php echo $featuredProduct['quantity'].' '.$featuredProduct['unit'];?> </strong></span></div>
-		                                <div id="holder7-<?php echo $key;?>" class="product25" style="display:none;width:235px;">
-		                                    <div id="wb_Image138" class="product24">
-		                                        <a href="javascript:openProduct(<?php echo $featuredProduct['id'];?>)" ><img src="<?php echo asset_url(); ?>images/view.png" id="Image138" alt=""></a>
-		                                    </div>
-		                                    <div id="wb_Image139" class="product26">
-		                                        <a href="<?php echo base_url();?>desksite/<?php echo $featuredProduct['busi_id'];?>" target="_blank"><img src="<?php echo asset_url(); ?>images/window.png" id="Image139" alt=""></a>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        <?php if($frame+2 == $i){ ?>
-		                        </div>
-		                        <?php } } ?>
-		                    </div>
-		                    <div id="Carousel1_back" class="fs18">
-			                        <a style="cursor:pointer"><img alt="Back" style="border-width:0" src="<?php echo asset_url(); ?>images/previoustxt0.png"></a>
-			                    </div>
-			                    <div id="Carousel1_next" class="fs17">
-			                        <a style="cursor:pointer"><img alt="Next" style="border-width:0" src="<?php echo asset_url(); ?>images/nexttxt0.png"></a>
-			                </div>
-		                    <!--<div id="Carousel11" style="position:absolute;top:275px;">
-		                    <?php $i =0;
-		                    foreach ( $featuredProducts as $key=>$featuredProduct) {
-		                    	if($key%2 == 1) {
-			                    	?>
-		                        <div class="frame" <?php if($i > 0) { ?>style="display:none;"<?php } ?>>
-		                            <div id="Layer134" class="product111" onmouseenter="ShowObjectWithEffect('holder7-<?php echo $key;?>', 1, 'dropup', 300, 'swing');return false;" onmouseleave="ShowObjectWithEffect('holder7-<?php echo $key;?>', 0, 'fade', 500, 'swing');return false;">
-		                                <div id="wb_Text417" class="product212">
-		                                    <span class="product313"><strong><?php echo $featuredProduct['name'];?></strong></span></div>
-		                                <div id="wb_Text418" class="product414">
-		                                    <span class="product5"><?php echo substr($featuredProduct['description'], '0', '35');?>...</span></div>
-		                                <div id="wb_Image128" class="product6">
-		                                    <img src="<?php echo asset_url().''.$featuredProduct['main_image']; ?>" id="Image128" alt="" style="width:190px;height:155px;"></div>
-		                                <div id="wb_Text419" class="product7">
-		                                    <span class="product8"><strong><?php echo $featuredProduct['unit_price'];?> / Pc</strong></span></div>
-		                                <div id="wb_Text420" class="product9">
-		                                    <span class="product10"><strong>Min. Qty. <?php echo $featuredProduct['quantity'].' '.$featuredProduct['unit'];?> </strong></span></div>
-		                                <div id="holder7-<?php echo $key;?>" class="product25" style="display:none;">
-		                                    <div id="wb_Image138" class="product24">
-		                                        <a href="javascript:openProduct(<?php echo $featuredProduct['id'];?>)" ><img src="<?php echo asset_url(); ?>images/view.png" id="Image138" alt=""></a>
-		                                    </div>
-		                                    <div id="wb_Image139" class="product26">
-		                                        <a href="<?php echo base_url();?>desksite/<?php echo $featuredProduct['busi_id'];?>" target="_blank"><img src="<?php echo asset_url(); ?>images/window.png" id="Image139" alt=""></a>
-		                                    </div>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <?php $i++; }?>
-		                        <?php } ?>
-		                    </div>-->
-		                </div>
-		            </div>
-		        </div>
-		        <!-- feature product ends-->
+
+<!-- feature products -->
+            <div class="sp">
+            
+							<div id="Layer157" style="position:absolute;text-align:left;top:165%;width:226px;height:942px;z-index:2511;">
+								<div id="Layer158" style="position:absolute;text-align:left;left:0px;top:0px;width:226px;height:272px;z-index:1695;">
+									<div id="wb_Image125" style="position:absolute;top:55px;width:226px;height:210px;z-index:1572;">
+										<img src="<?php echo asset_url(); ?>images/dice0.png" id="Image125" alt="">
+									</div>
+									<div id="wb_Text415" style="position:absolute;top:14px;width:226px;height:16px;text-align:center;z-index:1573;">
+										<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED</span>
+									</div>
+										<div id="wb_Text416" style="position:absolute;top:29px;width:226px;height:25px;text-align:center;z-index:1574;">
+											<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">PRODUCTS</span>
+										</div>
+								</div>
+							</div>
+              
+                <div id="Layer24">
+                    <div id="wb_Carousel5" style="position:absolute;left:1px;top:186%;width:223px;height:655px;z-index:16961;overflow:hidden;">
+                        <div id="Carousel5" style="position:absolute">
+                        <?php $i =0;
+                        foreach ( $featuredProducts as $key=>$featuredProduct) {
+                          if($i%2 == 0) {
+                            $frame = $i; 
+                            ?>
+                            <div class="frame">
+                            <?php } $i++; ?>
+                                <div id="<?= ($i%2 == 0) ? 'Layer161' : 'Layer167' ?>" style="position:absolute;text-align:left;left:1px;width:222px;height:285px;<?= ($i%2 == 0) ? 'top:301px;z-index:1593;' : 'top:1px;z-index:1614;'; ?>">
+
+                                	<div id="wb_Text117" style="position:absolute;top:15px;width:223px;height:16px;text-align:center;z-index:1577;">
+																		<span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><?php echo substr($featuredProduct['name'],'0','22');?></strong></span>
+																	</div>
+                                  
+                                 	<div id="wb_Text118" style="position:absolute;top:34px;width:223px;height:16px;text-align:center;z-index:1578;">
+																		<span style="color:#787878;font-family:Arial;font-size:12px;"><?php echo substr($featuredProduct['description'], '0', '35');?>...</span>
+																	</div>
+
+																	<div id="wb_Text119" style="position:absolute;top:236px;width:223px;height:16px;text-align:center;z-index:1579;">
+																		<span style="color:#FF8C00;font-family:Arial;font-size:16px;"><strong>$ <?php echo $featuredProduct['unit_price'];?> / Pc</strong></span>
+																	</div>
+
+																	<div id="wb_Text120" style="position:absolute;top:257px;width:223px;height:16px;text-align:center;z-index:1580;">
+																		<span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty <?php echo $featuredProduct['quantity'].' '.$featuredProduct['unit'];?> </strong></span>
+																	</div>
+
+																	<div id="Layer162" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:179px;width:212px;height:39px;z-index:1581;">
+																		<div id="wb_Image114" style="position:absolute;left:67px;top:2px;width:35px;height:35px;z-index:1575;">
+																			<a href="#" onclick="ShowObjectWithEffect('Layer_details2', 1, 'scale', 500, 'swing');return false;"><img src="images/window.png" id="Image114" alt=""></a>
+																		</div>
+																		<div id="wb_Image115" style="position:absolute;left:116px;top:2px;width:35px;height:35px;z-index:1576;">
+																			<a href="#" target="_blank"><img src="images/view.png" id="Image115" alt=""></a>
+																		</div>
+																	</div>
+																	
+																	<div id="wb_Image116" style="position:absolute;left:1px;top:59px;width:210px;height:161px;z-index:1583;">
+																		<a href="#" onclick=";return false;"><img src="<?php echo asset_url().''.$featuredProduct['main_image']; ?>" id="Image116" alt=""></a>
+																	</div>
+                                    
+                                </div>
+                            <?php if($frame+2 == $i){ ?>
+                            </div>
+                            <?php } } ?>
+                        </div>
+                        <div id="Carousel5_back" style="position:absolute;left:15px;top:91%;width:35px;height:13px;z-index:999">
+                        	<a style="cursor:pointer"><img alt="Back" style="border-width:0" src="images/previoustxt0blk.png"></a>
+                        </div>
+												<div id="Carousel5_next" style="position:absolute;right:15px;top:91%;width:35px;height:13px;z-index:999">
+													<a style="cursor:pointer"><img alt="Next" style="border-width:0" src="images/nexttxt0blk.png"></a>
+												</div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- feature product ends-->
+
+        		
 		    </div>
         		</div>
     		</div>

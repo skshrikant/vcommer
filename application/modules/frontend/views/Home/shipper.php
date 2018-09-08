@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo asset_url();?>css/custom.css">
 <style>
 #RollOver26 a
 {
@@ -415,14 +416,15 @@
 			    </div>
 			   </div>
 	  			<div class="maxheight1 bg1">
-						<div class="row" style="margin: 0px">
-							<h3 style="color: #fff; text-align: center;">
-								<span style="color:#4B4B4B;font-family:Arial;font-size:13px;">FEATURED WORLD</span><br> 
+		  			<div class="row" style="margin: 0px">
+							<div id="wb_Text275" style="margin-top: 20px;text-align:center;">
+								<span style="color:#4B4B4B;font-family:Arial;font-size:13px;">FEATURED WORLD</span>
+							</div>
+							<div id="wb_Text274" style="text-align:center;">
 								<span style="color:#4B4B4B;font-family:Impact;font-size:20px;letter-spacing:0.07px;">SHIPPERS</span>
-							</h3>
-							<div class="text-center displaydesktop">
+							</div>
+							<div id="wb_Image141" style="height:242px;">
 								<img src="<?php echo asset_url(); ?>images/Fshipperok.png" class="img-responsive">
-								<br>
 							</div>
 						</div>
 		    	</div>
@@ -442,57 +444,79 @@
                         if($i%2 == 0){
 									$frame = $i; 
 										?>
-                        			<div class="frame" style="<?php if ($i != 0) { ?> display: none;<?php } ?>;width:100%;">
-                        			<?php } $i++; ?>
-                            <div id="Layer147" onmouseenter="ShowObjectWithEffect('Buyer_holder2<?php echo $i;?>', 1, 'dropup', 300, 'swing');return false;"
-									onmouseleave="ShowObjectWithEffect('Buyer_holder2<?php echo $i;?>', 0, 'fade', 500, 'swing');return false;" style="width:100%;position: relative;">
-                                <div id="wb_Image226" style="padding-top: 4px;">
-                                	<?php if ($featuredShipper['picture'] != "" && file_exists("assets/".$featuredShipper['picture'])){ ?>
-                                    <img src="<?php echo asset_url().''.$featuredShipper['picture']; ?>" id="Image226" alt=""  class="style86" style="display: block;margin: auto;max-height:246px;">
-                                    <?php }else{ ?>
-			                            <img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:210px;height:246px;display: block;margin: auto;">
-			                        <?php } ?>
-                                </div>
-                              
-                                <div id="Layer144" class="style15" style="width: 100%;">
-                                    <div id="wb_Text434" class="style16">
-                                        <span class="fontstyle-4"><strong><?php echo $featuredShipper['contact_person_name'];?></strong></span>
-                                    </div>
-                                    <div id="wb_Text435" class="style17">
-                                        <span class="fontstyle-5"><?php echo $featuredShipper['position'];?></span></div>
-                                    <div id="Layer148" class="style18">
-                                        <div id="wb_Image48" class="style19">
-                                            <img src="<?php echo asset_url().''.$featuredShipper['contact_person_flag']; ?>" id="Image48" alt="">
-                                        </div>
-                                    </div>
-                                    <div id="Layer150" class="style20" style="width: 100%;">
-                                        <div id="wb_Text440" class="style21">
-                                            <span class="fontstyle-6"><strong><?php echo $featuredShipper['product_name'];?></strong></span></div>
-                                    </div>
-                                </div>
-                                
-                                <div id="Buyer_holder2<?php echo $i;?>" class="style22fs14" style="width: 100%;">
-                                    <div id="wb_Image521" class="style23">
-                                        <a href="javascript:openShipper(<?php echo $featuredShipper['id']; ?>);"><img src="<?php echo asset_url(); ?>images/window.png" id="Image5" alt=""></a>
-                                    </div>
-                                    <div id="RollOver12" class="style24">
-                                        <a href="<?php echo base_url().'shipper/profile/'.$featuredShipper['busi_id'];?>" target="_blank">
-                                            <img class="hover" alt="" src="<?php echo asset_url(); ?>images/desktoporange.gif">
-                                            <span><img alt="" src="<?php echo asset_url(); ?>images/desktopblack.png"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php if(count($featuredShippers) == 1 || $frame+2 == $i){ ?>
-                            </div>
-                            <?php } } ?>
+                        			<div class="frame">
+                        				<?php } $i++; ?>
+										
+										<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:226px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
+											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:226px;height:79px;z-index:535;">
+												<div id="wb_Text39" style="position:absolute;left:65px;top:15px;width:135px;height:14px;z-index:530;text-align:left;">
+													<span style="color:#000000;font-family:Georgia;font-size:11px;">
+														<?php if($featuredShipper['contact_person_name'] != ""){ ?>
+															<strong><?php echo $featuredShipper['contact_person_name'];?></strong>
+														<?php }else{ ?>
+															<strong><?php echo $featuredShipper['contact_person'];?></strong>
+														<?php } ?>
+													</span>
+												</div>
+												<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
+													<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
+												</div>
+												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:226px;height:19px;z-index:532;">
+													<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">
+														<span style="color:#000000;font-family:Arial;font-size:11px;">
+														<strong><?php echo $featuredShipper['product_name']; ?></strong>
+														</span>
+													</div>
+												</div>
+
+												<div id="Layer54" style="position:absolute;text-align:left;visibility:hidden;left:2px;top:14px;width:207px;height:46px;z-index:533;">
+													<div id="wb_Image37" style="position:absolute;left:64px;top:5px;width:35px;height:35px;z-index:528;">
+														<a href="#" onclick="ShowObjectWithEffect('Layer_buyer', 1, 'scale', 500, 'swing');return false;">
+														<img src="images/window.png" id="Image37" alt="">
+														</a>
+													</div>
+													<div id="RollOver13" style="position:absolute;left:113px;top:6px;overflow:hidden;width:35px;height:35px;z-index:529">
+														<a href="#" target="_blank">
+														<img class="hover" alt="" src="images/desktoporange.gif">
+														<span>
+															<img alt="" src="images/desktopblack.png">
+														</span>
+														</a>
+													</div>
+												</div>
+												<!-- <div id="wb_Image38" style="position:absolute;left:12px;top:9px;width:42px;height:42px;z-index:534;">
+													<img src="<?php echo asset_url();?>images/flags/<?php echo $featuredShipper['flag'];?>" id="Image38" alt="">
+												</div> -->
+											</div>
+
+
+											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:226px;height:226px;z-index:536;">
+												<a href="#" onclick=";return false;">
+													<?php if ($featuredShipper['picture'] != "" && file_exists("assets/".$featuredShipper['picture'])){ ?>
+														<img src="<?php echo asset_url().''.$featuredShipper['picture']; ?>" id="Image39" alt=""  class="style86" style="width:226px !important;max-height:210px !important;">
+													<?php }else{ ?>
+														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:226px;height:210px;">
+													<?php } ?>
+												</a>
+											</div>
+										</div>
+										
+									
+								<?php if($frame+2 == $i){ ?>
+								</div>
+								<?php } ?>
+               	 <?php }?>
                     </div>
-                    <div id="Carousel3_back" class="style51">
-                        <a href=""><img alt="Back" src="<?php echo asset_url(); ?>images/previoustxt0blk.png"></a>
-                    </div>
-                    <div id="Carousel3_next" class="style53">
-                        <a style="cursor:pointer"><img alt="Next" src="<?php echo asset_url(); ?>images/nexttxt0blk.png"></a>
-                    </div>
+                    <div id="Carousel1_back" style="position:absolute;left:15px;top:91%;width:35px;height:13px;z-index:999">
+											<a style="cursor:pointer">
+											<img alt="Back" style="border-width:0" src="images/previoustxt0blk.png">
+											</a>
+										</div>
+										<div id="Carousel1_next" style="position:absolute;right:15px;top:91%;width:35px;height:13px;z-index:999">
+											<a style="cursor:pointer">
+											<img alt="Next" style="border-width:0" src="images/nexttxt0blk.png">
+											</a>
+										</div>
                 </div>
             </div>
         </div>
@@ -506,18 +530,22 @@
 	</div>
 	 <div class="maxheight1 bg2">
                 <div class="row" style="margin: 0px">
-                    <h3 style="color: #fff; text-align: center;">
-						<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED</span><br> 
-						<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">VIDEOS</span>
-					</h3>
-                    <div class="text-center displaydesktop">
-                        <img src="<?php echo asset_url(); ?>images/porcube.png" class="img-responsive">
-                    </div>
+                    <div id="Layer212" style="position:absolute;text-align:left;width:226px;height:870px;z-index:2513;">
+							
+									<div id="Layer213" style="position:absolute;text-align:left;left:0px;top:0px;width:226px;height:273px;z-index:2311;">
+									<div id="wb_Text223" style="position:absolute;top:32px;width:226px;height:25px;text-align:center;z-index:2212;">
+										<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">VIDEOS</span></div>
+									<div id="wb_Image170" style="position:absolute;left:2px;top:61px;width:226px;height:226px;z-index:2213;">
+										<img src="<?php echo asset_url(); ?>images/porcube.png" id="Image170" alt=""></div>
+									<div id="wb_Text224" style="position:absolute;top:16px;width:226px;height:16px;text-align:center;z-index:2214;">
+										<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED </span></div>
+									</div>
+								</div>
                 </div>
             </div>
-            <div id="Layer24">
-                <div id="wb_Carousel2" class="style4" style="width: 100%;">
-                    <div id="Carousel2" style="position:absolute;width: 100%;">
+            <div id="">
+                <div id="wb_Carousel7" style="position:absolute;left:0px;top:119.2%;width:226px;height:595px;z-index:23121;overflow:hidden;">
+			                    <div id="Carousel7" style="position:absolute">
                     <?php 
                     $i = 0; 
                   // print_r($featuredProductVideo);
@@ -525,43 +553,47 @@
                     if($i%2 == 0){
 									$frame = $i; 
 										?>
-                        <div class="frame" class="style5"  style="<?php if ($i != 0) { ?> display: none;<?php } ?>;width:100%;">
-                        <?php } $i++; ?>
-                            <div id="Layer39" class="fs11" onmouseenter="ShowObjectWithEffect('holder<?php echo $i;?>', 1, 'dropup', 300, 'swing');return false;" onmouseleave="ShowObjectWithEffect('holder<?php echo $i;?>', 0, 'fade', 500, 'swing');return false;" style="position: relative;width: 100%;">
-                                <div id="wb_Text78" class="fs1" style="position: relative;">
-                                    <span><strong><?php echo $featuredVideo['name'];?></strong></span></div>
-                                <div id="wb_Text77" class="fs2">
-                                    <span class="fs3"><?php echo substr($featuredVideo['description'], '0', '30');?> ...</span></div>
-                                <div id="wb_MediaPlayer1" class="fs9" style="width: 100%;">
-                                    <video src="<?php echo asset_url().''.$featuredVideo['vedio_file']; ?>" controls="controls" style="width: 100% !important;">
-                                    </video>
-                                </div>
-                                <div id="wb_Text79" class="fs6">
-                                    <span class="fs4"><strong><?php echo $featuredVideo['unit_price'] ; ?> / Set</strong></span></div>
-                                <div id="wb_Text80" class="fs7">
-                                    <span class="fs5"><strong>Min. Qty. <?php echo $featuredVideo['quantity'].' '.$featuredVideo['unit'];?></strong></span></div>
-                                
-                                <div id="Layer29" class="fs13">
-                                </div>
-                                <div id="holder<?php echo $i;?>" class="fs14" style="width:100%;">
-                                    <div id="wb_Image33" class="fs15">
-                                        <a href="javascript:openVideo(<?php echo $featuredVideo['id'];?>)"><img src="<?php echo asset_url(); ?>images/play.png" id="Image33" alt="" width="35px" height="35px"></a>
-                                    </div>
-                                    <div id="wb_Image34" class="fs16">
-                                        <a href="./video_details.php" target="_blank"><img src="<?php echo asset_url(); ?>images/view2.png" id="Image34" alt="" width="35px" height="35px"></a>
-                                    </div>
-                                </div>
+                        <div class="frame">
+                        	<?php }else{ ?>
+                        	
+                        	<?php } $i++; ?>
+                            <div id="<?= ($i%2 == 0) ? 'Layer214' : 'Layer200' ?>" style="position:absolute;text-align:left;left:2px;width:223px;height:269px;<?= ($i%2 == 0) ? 'z-index:2229;top:3px;' : 'top:285px;z-index:2230;'; ?>">
+
+                              <div id="<?= ($i%2 == 0) ? 'wb_Text225' : 'wb_Text205' ?>" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2216;">
+    												    <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5" onclick=";return false;"><?php echo $featuredVideo['name'];?></a></strong></span>
+    												  </div>
+
+															<div id="wb_Text226" style="position:absolute;left:20px;top:31px;width:172px;height:16px;text-align:center;z-index:2217;">
+									              <span style="color:#787878;font-family:Arial;font-size:12px;"><?php echo substr($featuredVideo['description'], '0', '50');?></span>
+    													</div>
+
+                              <div id="wb_MediaPlayer15" style="position:absolute;left:0px;top:81px;width:223px;height:118px;z-index:2218;">
+									              <video src="<?php echo asset_url().''.$featuredVideo['vedio_file']; ?>" id="MediaPlayer15">
+									              </video>
+									            </div>  
+                              <div id="Layer215" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:223px;height:39px;z-index:2219;">
+									              <div id="wb_Image171" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2215;">
+									                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
+									                    src="images/view2.png" id="Image171" alt=""></a></div>
+									            </div> 
+
+									            <div id="wb_Text213" style="position:absolute;top:220px;width:223px;height:16px;text-align:center;z-index:2220;">
+        												<span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ <?php echo $featuredVideo['unit_price'];?>  / Pack</strong></span>
+      												</div> 
+
+      												<div id="wb_Text214" style="position:absolute;top:241px;width:223px;height:16px;text-align:center;z-index:2221;">
+        												<span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. <?php echo $featuredVideo['quantity'].' '.$featuredVideo['unit'];?></strong></span>
+        											</div>
+
                             </div>
                         <?php if($frame+2 == $i){ ?>
                         </div>
-                        <?php } }?>
+                        <?php } } ?>
                     </div>
-                    <div id="Carousel2_back" class="fs18">
-                        <a style="cursor:pointer"><img alt="Back" style="border-width:0" src="<?php echo asset_url(); ?>images/previoustxt0.png"></a>
-                    </div>
-                    <div id="Carousel2_next" class="fs17">
-                        <a style="cursor:pointer"><img alt="Next" style="border-width:0" src="<?php echo asset_url(); ?>images/nexttxt0.png"></a>
-                    </div>
+                    <div id="Carousel7_back" style="position:absolute;left:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer">
+                          	<img alt="Back" style="border-width:0" src="images/previoustxt0.png"></a></div>
+      										<div id="Carousel7_next" style="position:absolute;right:15px;top:95%;width:35px;height:13px;z-index:999"><a style="cursor:pointer">
+      										<img alt="Next" style="border-width:0" src="images/nexttxt0.png"></a></div>
                 </div>
             </div>
 	
