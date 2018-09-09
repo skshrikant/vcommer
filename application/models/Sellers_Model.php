@@ -124,19 +124,21 @@ class Sellers_Model extends CI_Model {
             if($params['plan_id'] > 1) {
                 $this->db->order_by('b.plan_id', 'DESC');
             }else{
-                $this->db->order_by('b.plan_id','ASC');
+                $this->db->order_by('b.plan_id', 'ASC');
             }
-        }else{
-            $this->db->order_by('b.plan_id','ASC');
         }
 
+        $this->db->order_by('b.rank','DESC');
+
     	$this->db->group_by('b.id');
-    	if(!empty($params['page'])) {
+    	
+        if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
     		$this->db->limit($start,25);
     	}
-    	$query = $this->db->get();
-			$result = $query->result_array();
+    	
+        $query = $this->db->get();
+		$result = $query->result_array();    
     	return $result;
     }
     
@@ -249,9 +251,12 @@ class Sellers_Model extends CI_Model {
 	    	}*/
 	    	if(!empty($params['type'])) {
 	    		if($params['type'] ==1){
-	    			$this->db->order_by('(b.accept_chat+b.accept_offer+b.accept_community+b.accept_email)', 'ASC');
+                    $this->db->order_by('is_active','DESC');
+	    			// $this->db->order_by('(b.accept_chat+b.accept_offer+b.accept_community+b.accept_email)', 'ASC');
 	    		} elseif($params['type'] == 2) {
-	    			$this->db->order_by('count(m.id)', 'DESC');
+                    $this->db->order_by('stock_buyer_count','DESC');
+                    $this->db->order_by('bstation_post_count','DESC');
+	    			// $this->db->order_by('count(m.id)', 'DESC');
 	    		}
 	    	}
 	    	if(!empty($params['similar'])) {
@@ -261,12 +266,15 @@ class Sellers_Model extends CI_Model {
     		if(!empty($params['cat_id'])) {
     			$this->db->where('k.id', $params['cat_id']);
     		}
+
+            $this->db->order_by('is_active','DESC');
     	}
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
     		$this->db->limit($start,25);
     	}
-    	$this->db->order_by('is_active','DESC');
+
+    	
     	$this->db->group_by('b.id');
     	$query = $this->db->get();
     	$result = $query->result_array();
@@ -448,7 +456,7 @@ class Sellers_Model extends CI_Model {
     	if(isset($params['usubcat_id']) && !empty($params['usubcat_id'])) {
 				$this->db->order_by("FIELD(e.id, ".$params['usubcat_id'].") DESC");
     	}
-
+        $this->db->order_by('b.plan_id','DESC');
     	$this->db->group_by('b.id');
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
@@ -798,9 +806,11 @@ class Sellers_Model extends CI_Model {
     		}
     	}
     	if(isset($params['plan_id']) && !empty($params['plan_id'])) {
-				if($params['plan_id'] > 1) {
-						$this->db->order_by('b.plan_id', 'DESC');
-				}
+			if($params['plan_id'] > 1) {
+				$this->db->order_by('b.plan_id', 'DESC');
+			}else{
+                $this->db->order_by('b.plan_id', 'ASC');
+            }
     	}
     	if(isset($params['main_prod']) && $params['main_prod']!=''){
 				$this->db->where("(d.name like '%".trim($params['main_prod'])."%')",'',false);
@@ -808,11 +818,15 @@ class Sellers_Model extends CI_Model {
 			if(isset($params['sub_prod']) && $params['sub_prod']!=''){
 				$this->db->where("(c.name like '%".trim($params['sub_prod'])."%')",'',false);
 			}
-    	$this->db->group_by('a.id');
+    	
+        $this->db->order_by('b.rank','DESC');
+
+        $this->db->group_by('a.id');
     	if(!empty($params['page'])) {
     		$start = $params['page']*25 - 25;
     		$this->db->limit($start,25);
     	}
+
     	$query = $this->db->get();
     	$result = $query->result_array();
     	return $result;	
@@ -1285,7 +1299,7 @@ class Sellers_Model extends CI_Model {
     			$this->db->where("(".fulltext_search_str('b.catalogue_title',$params['keyword']).")",'',false);
     		}
     		if(!empty($params['city'])) {
-    			$this->db->where("b.company_city like '%".trim($params['city'])."%'",'',false);
+    			$this->db->where("c.company_city like '%".trim($params['city'])."%'",'',false);
     		}
     		if(!empty($params['type']) && $params['type'] == 1) {
     			$this->db->where("c.plan_id > 1",'',false);

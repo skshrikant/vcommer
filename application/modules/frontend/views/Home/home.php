@@ -111,7 +111,7 @@ $locale = localeconv();
 								<select class="search-box" name='country'>
 									<option value="">Country</option>
 									<?php foreach ($Country as $country) { ?>
-										<option value="<?php echo $country['id'] . '_' . $country['name']; ?> "><?php echo $country['name']; ?></option>
+										<option value="<?= $country['name'];?>"><?php echo $country['name']; ?></option>
 									<?php } ?>
 								</select>
 							</div>
