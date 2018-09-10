@@ -2193,13 +2193,15 @@ class Product_Model extends CI_Model {
     
     
     /* ********************* Stock Market Posts ************************ */
-    public function getStockMarketPostById($id,$userid) {
+    public function getStockMarketPostById($id,$userid = null) {
     	$this->db->select('a.id,a.title,a.busi_id,b.company_name,c.name_prefix,c.name');
     	$this->db->from(TABLES::$STOCK_GOODS.' AS a');
     	$this->db->join(TABLES::$BUSINESS_INFO.' AS b','a.busi_id=b.id','inner');
     	$this->db->join(TABLES::$USER.' AS c','b.id=c.busi_id','inner');
 			$this->db->where('a.id', $id);
-			$this->db->where('c.id', $userid);
+			if(!empty($userid)){
+				$this->db->where('c.id', $userid);
+			}
     	$query = $this->db->get();
 			$result = $query->result_array();
     	return $result;

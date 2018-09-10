@@ -340,7 +340,6 @@ function openNewPostForm() {
 						// Prevent form submission
 						event.preventDefault();
 						var imgselect = $('#cimg1').val();
-						console.log(imgselect);
 						if(imgselect != ''){
 							addPostContent();
 						}else{

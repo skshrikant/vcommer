@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="<?php echo asset_url(); ?>css/fancybox/jquery.fancybox-1.3.0.css">
 
 
-<!-- <link type="text/css" rel="stylesheet" href="http://localhost/trd/trd/assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://localhost/trd/trd/assets/css/pages/pro-details.css?1"> -->
+<!-- <link type="text/css" rel="stylesheet" href="<?php echo asset_url();?>css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo asset_url();?>css/pages/pro-details.css?1"> -->
 
 <style type="text/css">
 	
@@ -884,68 +884,68 @@ function videoDetail(id) {
 <div id="Layer223" style="position: fixed; text-align: center; visibility: hidden; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 4935; display: block;">
 	<div id="Layer223_Container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 		<div id="Layer139_Container" style="position:absolute;text-align:center;left:513px;top:326px;width:277px;height:163px;z-index:4881;">
-			<div id="Layer139_Container" style="width:277px;position:relative;margin-left:auto;margin-right:auto;text-align:left;" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://localhost/trd/trd/" data-a2a-title="Awesome business website, worth spreading..!!" data-a2a-text="Discover an immersive B2B experience, built to wow your audience and push your business towards a new generation of Ecommerce..!!">
+			<div id="Layer139_Container" style="width:277px;position:relative;margin-left:auto;margin-right:auto;text-align:left;" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="<?php echo asset_url();?>" data-a2a-title="Awesome business website, worth spreading..!!" data-a2a-text="Discover an immersive B2B experience, built to wow your audience and push your business towards a new generation of Ecommerce..!!">
 				<div id="RollOver64" style="position:absolute;left:32px;top:19px;width:45px;height:45px;z-index:4873">
 					<a class="a2a_button_google_plus">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/google.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/google0.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/google.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/google0.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver65" style="position:absolute;left:89px;top:19px;width:45px;height:45px;z-index:4874">
 					<a class="a2a_button_facebook">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/face.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/face0.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/face.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/face0.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver66" style="position:absolute;left:146px;top:19px;width:45px;height:45px;z-index:4875">
 					<a class="a2a_button_twitter">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/twitter.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/twitter0.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/twitter.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/twitter0.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver67" style="position:absolute;left:32px;top:78px;width:45px;height:45px;z-index:4876">
 				<a class="a2a_button_pinterest">
 					<div class="image_container">
-						<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/pin.png" class="share-btns"></div>
-						<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/pin0.png" class="share-btns"></div>
+						<div class="front"><img alt="" src="<?php echo asset_url();?>images/pin.png" class="share-btns"></div>
+						<div class="back"><img alt="" src="<?php echo asset_url();?>images/pin0.png" class="share-btns"></div>
 					</div>
 				</a>
 				</div>
 				<div id="RollOver68" style="position:absolute;left:203px;top:19px;width:45px;height:45px;z-index:4877">
 					<a class="a2a_button_linkedin">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/linkedin.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/linkedin0.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/linkedin.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/linkedin0.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver69" style="position:absolute;left:89px;top:78px;width:45px;height:45px;z-index:4878">
 					<a class="a2a_button_email">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/mail-round-filled.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/mail-round.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/mail-round-filled.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/mail-round.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver70" style="position:absolute;left:146px;top:78px;width:45px;height:45px;z-index:4879">
 					<a class="a2a_button_wechat">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/wechat.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/wechat0.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/wechat.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/wechat0.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
 				<div id="RollOver71" style="position:absolute;left:203px;top:78px;width:45px;height:45px;z-index:4880">
 					<a class="a2a_button_whatsapp">
 						<div class="image_container">
-							<div class="front"><img alt="" src="http://localhost/trd/trd/assets/images/whatsapp.png" class="share-btns"></div>
-							<div class="back"><img alt="" src="http://localhost/trd/trd/assets/images/whatsapp.png" class="share-btns"></div>
+							<div class="front"><img alt="" src="<?php echo asset_url();?>images/whatsapp.png" class="share-btns"></div>
+							<div class="back"><img alt="" src="<?php echo asset_url();?>images/whatsapp.png" class="share-btns"></div>
 						</div>
 					</a>
 				</div>
@@ -953,7 +953,7 @@ function videoDetail(id) {
 			</div>
 		</div>
 		<div id="wb_Image103" style="position:absolute;left:777px;top:300px;width:40px;height:40px;z-index:4882;">
-			<a href="#" onclick="ShowObjectWithEffect('Layer223', 0, 'fade', 500);return false;"><img src="http://localhost/trd/trd/assets/images/img0482.png" id="Image103" alt=""></a>
+			<a href="#" onclick="ShowObjectWithEffect('Layer223', 0, 'fade', 500);return false;"><img src="<?php echo asset_url();?>images/img0482.png" id="Image103" alt=""></a>
 		</div>
 	</div>
 </div>
