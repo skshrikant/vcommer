@@ -657,7 +657,7 @@ ul.share{
 		    	<div id="Layer2" class="style2">
        			  <div id="Layer2_Container" class="style3">
            			 <div id="Layer138">
-               			 <div id="wb_Carousel1" style="width:226px;height:655px;z-index:660;overflow:hidden;">
+               			 <div id="wb_Carousel1" style="width:205px;height:655px;z-index:660;overflow:hidden;">
 							<div  id="Carousel1" style="position:absolute;">
                     		
 								<?php 
@@ -669,8 +669,8 @@ ul.share{
                         			<div class="frame">
                         				<?php } $i++; ?>
 										
-										<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:226px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
-											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:226px;height:79px;z-index:535;">
+										<div id="<?= ($i%2 == 0) ?'Layer51':'Layer55' ?>" style="position:absolute;text-align:left;left:2px;width:205px;height:288px;<?= ($i%2 == 0) ?'top:2px;z-index:547;':'top:304px;z-index:548;'?>">
+											<div id="Layer52" style="position:absolute;text-align:left;left:0px;top:209px;width:205px;height:79px;z-index:535;">
 												<div id="wb_Text39" style="position:absolute;left:65px;top:15px;width:135px;height:14px;z-index:530;text-align:left;">
 													<span style="color:#000000;font-family:Georgia;font-size:11px;">
 														<?php if($featuredSeller['contact_person_name'] != ""){ ?>
@@ -683,7 +683,7 @@ ul.share{
 												<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
 													<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
 												</div>
-												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:226px;height:19px;z-index:532;">
+												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:205px;height:19px;z-index:532;">
 													<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">
 														<span style="color:#000000;font-family:Arial;font-size:11px;">
 														<strong><?php echo $featuredSeller['product_name']; ?></strong>
@@ -712,12 +712,12 @@ ul.share{
 											</div>
 
 
-											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:226px;height:226px;z-index:536;">
+											<div id="wb_Image39" style="position:absolute;left:0px;top:0px;width:205px;height:226px;z-index:536;">
 												<a href="#" onclick=";return false;">
 													<?php if ($featuredSeller['picture'] != "" && file_exists("assets/".$featuredSeller['picture'])){ ?>
 														<img src="<?php echo asset_url().''.$featuredSeller['picture']; ?>" id="Image39" alt=""  class="style86" style="width:226px !important;max-height:210px !important;">
 													<?php }else{ ?>
-														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:226px;height:210px;">
+														<img src="<?php echo asset_url().'images/img1004.png'?>" id="Shape24" alt="" style="width:205px;height:210px;">
 													<?php } ?>
 												</a>
 											</div>
@@ -745,14 +745,14 @@ ul.share{
            			 
            			  <div class="maxheight1 bg2">
 		                	<div class="row" style="margin: 0px">
-								<div id="Layer212" style="position:absolute;text-align:left;width:226px;height:870px;z-index:2513;">
+								<div id="Layer212" style="position:absolute;text-align:left;width:205px;height:870px;z-index:2513;">
 							
-									<div id="Layer213" style="position:absolute;text-align:left;left:0px;top:0px;width:226px;height:273px;z-index:2311;">
-									<div id="wb_Text223" style="position:absolute;top:32px;width:226px;height:25px;text-align:center;z-index:2212;">
+									<div id="Layer213" style="position:absolute;text-align:left;left:0px;top:0px;width:205px;height:273px;z-index:2311;">
+									<div id="wb_Text223" style="position:absolute;top:32px;width:205px;height:25px;text-align:center;z-index:2212;">
 										<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">PRODUCTS VIDEOS</span></div>
-									<div id="wb_Image170" style="position:absolute;left:2px;top:61px;width:226px;height:226px;z-index:2213;">
+									<div id="wb_Image170" style="position:absolute;left:2px;top:61px;width:205px;height:205px;z-index:2213;">
 										<img src="<?php echo asset_url(); ?>images/porcube.png" id="Image170" alt=""></div>
-									<div id="wb_Text224" style="position:absolute;top:16px;width:226px;height:16px;text-align:center;z-index:2214;">
+									<div id="wb_Text224" style="position:absolute;top:16px;width:205px;height:16px;text-align:center;z-index:2214;">
 										<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED </span></div>
 									</div>
 								</div>
@@ -761,7 +761,7 @@ ul.share{
 			            <div id="">
 						
 	
-			                <div id="wb_Carousel7" style="position:absolute;left:0px;top:927px;width:226px;height:595px;z-index:23121;overflow:hidden;">
+			                <div id="wb_Carousel7" style="position:absolute;left:0px;top:927px;width:205px;height:595px;z-index:23121;overflow:hidden;">
 			                    <div id="Carousel7" style="position:absolute">
 			                    <?php $i =0;
 			                    foreach ($featuredProductVideo as $featuredVideo) {
@@ -772,9 +772,9 @@ ul.share{
 			                        	<?php }else{ ?>
 			                        	
 			                        	<?php } $i++; ?>
-			                            <div id="<?= ($i%2 == 0) ? 'Layer214' : 'Layer200' ?>" style="position:absolute;text-align:left;left:2px;width:223px;height:269px;<?= ($i%2 == 0) ? 'z-index:2229;top:3px;' : 'top:285px;z-index:2230;'; ?>">
+			                            <div id="<?= ($i%2 == 0) ? 'Layer214' : 'Layer200' ?>" style="position:absolute;text-align:left;left:2px;width:202px;height:269px;<?= ($i%2 == 0) ? 'z-index:2229;top:3px;' : 'top:285px;z-index:2230;'; ?>">
 
-                                    <div id="<?= ($i%2 == 0) ? 'wb_Text225' : 'wb_Text205' ?>" style="position:absolute;left:15px;top:13px;width:185px;height:16px;text-align:center;z-index:2216;">
+                                    <div id="<?= ($i%2 == 0) ? 'wb_Text225' : 'wb_Text205' ?>" style="position:absolute;top:13px;width:202px;height:16px;text-align:center;z-index:2216;">
           												    <span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><a href="#" class="style5" onclick=";return false;"><?php echo $featuredVideo['name'];?></a></strong></span>
           												  </div>
 
@@ -782,21 +782,21 @@ ul.share{
 												              <span style="color:#787878;font-family:Arial;font-size:12px;"><?php echo substr($featuredVideo['description'], '0', '50');?></span>
           													</div>
 
-			                              <div id="wb_MediaPlayer15" style="position:absolute;left:0px;top:81px;width:223px;height:118px;z-index:2218;">
+			                              <div id="wb_MediaPlayer15" style="position:absolute;left:0px;top:81px;width:202px;height:118px;z-index:2218;">
 												              <video src="<?php echo asset_url().''.$featuredVideo['vedio_file']; ?>" id="MediaPlayer15">
 												              </video>
 												            </div>  
-			                              <div id="Layer215" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:223px;height:39px;z-index:2219;">
+			                              <div id="Layer215" style="position:absolute;text-align:left;visibility:hidden;left:0px;top:173px;width:202px;height:39px;z-index:2219;">
 												              <div id="wb_Image171" style="position:absolute;left:89px;top:2px;width:35px;height:35px;z-index:2215;">
 												                <a href="#" onclick="ShowObjectWithEffect('Layer_Details', 1, 'scale', 500, 'swing');return false;"><img
 												                    src="images/view2.png" id="Image171" alt=""></a></div>
 												            </div> 
 
-												            <div id="wb_Text213" style="position:absolute;top:220px;width:223px;height:16px;text-align:center;z-index:2220;">
+												            <div id="wb_Text213" style="position:absolute;top:220px;width:202px;height:16px;text-align:center;z-index:2220;">
               												<span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>$ <?php echo $featuredVideo['unit_price'];?>  / Pack</strong></span>
             												</div> 
 
-            												<div id="wb_Text214" style="position:absolute;top:241px;width:223px;height:16px;text-align:center;z-index:2221;">
+            												<div id="wb_Text214" style="position:absolute;top:241px;width:202px;height:16px;text-align:center;z-index:2221;">
               												<span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty. <?php echo $featuredVideo['quantity'].' '.$featuredVideo['unit'];?></strong></span>
               											</div>
 
@@ -817,22 +817,22 @@ ul.share{
 <!-- feature products -->
             <div class="sp">
             
-							<div id="Layer157" style="position:absolute;text-align:left;top:165%;width:226px;height:942px;z-index:2511;">
-								<div id="Layer158" style="position:absolute;text-align:left;left:0px;top:0px;width:226px;height:272px;z-index:1695;">
-									<div id="wb_Image125" style="position:absolute;top:55px;width:226px;height:210px;z-index:1572;">
+							<div id="Layer157" style="position:absolute;text-align:left;top:165%;width:205px;height:942px;z-index:2511;">
+								<div id="Layer158" style="position:absolute;text-align:left;left:0px;top:0px;width:205px;height:272px;z-index:1695;">
+									<div id="wb_Image125" style="position:absolute;top:55px;width:205px;height:205px;z-index:1572;">
 										<img src="<?php echo asset_url(); ?>images/dice0.png" id="Image125" alt="">
 									</div>
-									<div id="wb_Text415" style="position:absolute;top:14px;width:226px;height:16px;text-align:center;z-index:1573;">
+									<div id="wb_Text415" style="position:absolute;top:14px;width:205px;height:16px;text-align:center;z-index:1573;">
 										<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">FEATURED</span>
 									</div>
-										<div id="wb_Text416" style="position:absolute;top:29px;width:226px;height:25px;text-align:center;z-index:1574;">
+										<div id="wb_Text416" style="position:absolute;top:29px;width:205px;height:25px;text-align:center;z-index:1574;">
 											<span style="color:#FFFFFF;font-family:Impact;font-size:20px;letter-spacing:0.07px;">PRODUCTS</span>
 										</div>
 								</div>
 							</div>
               
                 <div id="Layer24">
-                    <div id="wb_Carousel5" style="position:absolute;left:1px;top:186%;width:223px;height:655px;z-index:16961;overflow:hidden;">
+                    <div id="wb_Carousel5" style="position:absolute;left:1px;top:186%;width:202px;height:655px;z-index:16961;overflow:hidden;">
                         <div id="Carousel5" style="position:absolute">
                         <?php $i =0;
                         foreach ( $featuredProducts as $key=>$featuredProduct) {
@@ -841,21 +841,21 @@ ul.share{
                             ?>
                             <div class="frame">
                             <?php } $i++; ?>
-                                <div id="<?= ($i%2 == 0) ? 'Layer161' : 'Layer167' ?>" style="position:absolute;text-align:left;left:1px;width:222px;height:285px;<?= ($i%2 == 0) ? 'top:301px;z-index:1593;' : 'top:1px;z-index:1614;'; ?>">
+                                <div id="<?= ($i%2 == 0) ? 'Layer161' : 'Layer167' ?>" style="position:absolute;text-align:left;left:1px;width:202px;height:285px;<?= ($i%2 == 0) ? 'top:301px;z-index:1593;' : 'top:1px;z-index:1614;'; ?>">
 
-                                	<div id="wb_Text117" style="position:absolute;top:15px;width:223px;height:16px;text-align:center;z-index:1577;">
+                                	<div id="wb_Text117" style="position:absolute;top:15px;width:202px;height:16px;text-align:center;z-index:1577;">
 																		<span style="color:#303030;font-family:Georgia;font-size:13px;"><strong><?php echo substr($featuredProduct['name'],'0','22');?></strong></span>
 																	</div>
                                   
-                                 	<div id="wb_Text118" style="position:absolute;top:34px;width:223px;height:16px;text-align:center;z-index:1578;">
+                                 	<div id="wb_Text118" style="position:absolute;top:34px;width:202px;height:16px;text-align:center;z-index:1578;">
 																		<span style="color:#787878;font-family:Arial;font-size:12px;"><?php echo substr($featuredProduct['description'], '0', '35');?>...</span>
 																	</div>
 
-																	<div id="wb_Text119" style="position:absolute;top:236px;width:223px;height:16px;text-align:center;z-index:1579;">
+																	<div id="wb_Text119" style="position:absolute;top:236px;width:202px;height:16px;text-align:center;z-index:1579;">
 																		<span style="color:#FF8C00;font-family:Arial;font-size:16px;"><strong>$ <?php echo $featuredProduct['unit_price'];?> / Pc</strong></span>
 																	</div>
 
-																	<div id="wb_Text120" style="position:absolute;top:257px;width:223px;height:16px;text-align:center;z-index:1580;">
+																	<div id="wb_Text120" style="position:absolute;top:257px;width:202px;height:16px;text-align:center;z-index:1580;">
 																		<span style="color:#787878;font-family:Arial;font-size:12px;"><strong>Min. Qty <?php echo $featuredProduct['quantity'].' '.$featuredProduct['unit'];?> </strong></span>
 																	</div>
 
@@ -868,7 +868,7 @@ ul.share{
 																		</div>
 																	</div>
 																	
-																	<div id="wb_Image116" style="position:absolute;left:1px;top:59px;width:210px;height:161px;z-index:1583;">
+																	<div id="wb_Image116" style="position:absolute;left:1px;top:59px;width:200px;height:161px;z-index:1583;">
 																		<a href="#" onclick=";return false;"><img src="<?php echo asset_url().''.$featuredProduct['main_image']; ?>" id="Image116" alt=""></a>
 																	</div>
                                     
