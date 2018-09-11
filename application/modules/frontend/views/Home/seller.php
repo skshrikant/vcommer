@@ -680,8 +680,9 @@ ul.share{
 														<?php } ?>
 													</span>
 												</div>
+												
 												<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
-													<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
+													<span style="color:#696969;font-family:Arial;font-size:12px;"><?= $featuredSeller['position']?></span>
 												</div>
 												<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:205px;height:19px;z-index:532;">
 													<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">

@@ -437,7 +437,7 @@
 								<?php 
 									$i= 0;
 									foreach($featuredShippers as $featuredShipper){
-										if($i%2 == 0){
+										if($i%2 == 0){ 
 											$frame = $i;?>
 
 											<div class="frame">
@@ -455,7 +455,7 @@
 															</span>
 														</div>
 														<div id="wb_Text40" style="position:absolute;left:65px;top:30px;width:132px;height:15px;z-index:531;text-align:left;">
-															<span style="color:#696969;font-family:Arial;font-size:12px;"></span>
+															<span style="color:#696969;font-family:Arial;font-size:12px;"><?= $featuredShipper['position'] ?></span>
 														</div>
 														<div id="Layer53" style="position:absolute;text-align:left;left:0px;top:60px;width:206px;height:19px;z-index:532;">
 															<div id="wb_Text41" style="position:absolute;left:8px;top:2px;width:190px;height:14px;z-index:527;text-align:left;">
@@ -503,12 +503,12 @@
 										<?php } ?>
 									<?php }?>
 								</div>
-								<div id="Carousel1_back" style="position:absolute;left:15px;top:54%;width:35px;height:13px;z-index:999">
+								<div id="Carousel1_back" style="position:absolute;left:15px;top:92%;width:35px;height:13px;z-index:999">
 									<a style="cursor:pointer">
 									<img alt="Back" style="border-width:0" src="images/previoustxt0blk.png">
 									</a>
 								</div>
-								<div id="Carousel1_next" style="position:absolute;right:15px;top:54%;width:35px;height:13px;z-index:999">
+								<div id="Carousel1_next" style="position:absolute;right:15px;top:92%;width:35px;height:13px;z-index:999">
 									<a style="cursor:pointer">
 									<img alt="Next" style="border-width:0" src="images/nexttxt0blk.png">
 									</a>
