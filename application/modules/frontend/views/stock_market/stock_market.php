@@ -340,10 +340,11 @@ function openNewPostForm() {
 						// Prevent form submission
 						event.preventDefault();
 						var imgselect = $('#cimg1').val();
-						if(imgselect != ''){
-							addPostContent();
-						}else{
+						var imgselect2 = $('#postphoto1').val();
+						if(imgselect == '' && imgselect2 == ''){
 							$('.errormsg').html('<small class="help-block" data-bv-validator="notEmpty" data-bv-result="INVALID" style="">First Image is manadatory!</small>');
+						}else{
+							addPostContent();
 						}
 					});
 				}
